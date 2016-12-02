@@ -1,0 +1,230 @@
+.common-container{
+	width: 1190px;
+	margin: 0 auto;
+	position: relative;
+}
+body{
+	min-width: 1190px;
+	background-color: #f6f6f6;
+}
+.header{
+	height: 170px;
+	position: relative;
+}
+.header-logo{
+	position: absolute;
+	float: left;
+	width: 190px;
+	height: 170px;
+	background-color: #fff;
+	box-shadow: 0 -10px 10px #ccc;
+}
+.header-shortcut{
+	height: 30px;
+	background-color: #e3e4e5;
+	font-size: 12px;
+}
+.header-shortcut-loginlist{
+	line-height: 30px;
+	float: right;
+}
+.header-shortcut-loginlist li{
+	display: inline-block;
+	float: left;
+	padding: 0 5px;
+}
+.header-searchbar{
+	text-align: center;
+	padding-top: 25px;
+	position: relative;
+	font-size: 12px;
+}
+.header-searchbar>div{
+	display: inline-block;
+}
+.header-searchbar-search .search{
+	width: 500px;
+	height: 25px;/*在IE中不设置height会出问题！*/
+	line-height: 25px;
+	padding: 5px;
+	border: none;
+	float: left;
+	vertical-align: middle;
+}
+.header-searchbar-search .searchbtn{
+	width: 50px;
+	height: 35px;
+	border: none;
+	float: left;
+	cursor: pointer;
+	background: #f10215 url(../img/header-search-btnimg.jpg) no-repeat center;
+}
+.header-searchbar-search{
+	border: 1px solid #f10215;
+	background-color: #fff;
+}
+.header-searchbar-cart{
+	position: absolute;
+	right: 0;
+	width: 190px;
+	line-height: 35px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+}
+.header-hotword{
+	text-align: center;
+	font-size: 12px;
+}
+.header-hotword-list{
+	display: inline-block;
+	margin-top: 3px;
+	width: 562px;
+}
+.header-hotword-list li{
+	float: left;
+	padding-right: 10px;
+}
+.header-nav{
+	margin-top: 15px;
+	text-align: center;
+}
+.header-nav-list{
+	display: inline-block;
+}
+.header-nav-list li{
+	float: left;
+	padding: 0 12px;
+}
+.mainpage-class{
+	float: left;
+	width: 190px;
+	height: 480px;
+	color: #eee;
+	background-color: #6c6669;
+}
+.mainpage-class *{
+	font-size: 14px;
+	color: #eee;
+}
+.mainpage-slideshow{
+	float: left;
+	width: 790px;
+	height: 480px;
+	margin-left: 10px;
+}
+.mainpage-quickentry{
+	float: right;
+	width: 190px;
+	height: 480px;
+	background-color: #fff;
+}
+.mainpage-class-list{
+	margin-top: 15px;
+}
+.mainpage-class-list li{
+	width: 180px;
+	padding-left: 10px;
+	line-height: 30px;
+	font-size: 14px;
+}
+.mainpage-class-list li:hover{
+	background-color: #999395;
+}
+.mainpage-slideshow-top{
+	width: 790px;
+	height: 340px;
+	overflow: hidden;
+	float: left;
+}
+.mainpage-slideshow-bottom{
+	width: 790px;
+	height: 130px;
+	float: left;
+	margin-top: 10px;
+	background-color: #fff;
+}
+.mainpage-slideshow-bottom a:nth-child(2){
+	float: right;
+}
+.mainpage-quickentry-welcome{
+	width: 190px;
+	height: 115px;
+	border-bottom: 1px solid #ccc;
+	font-size: 12px;
+}
+.mainpage-quickentry-welcome-top img{
+	width: 45px;
+	height: 45px;
+	border: 1px solid transparent;/*使IE中的border-radius也能生效*/
+	border-radius: 100%;
+	padding: 14px;
+	float: left;
+}
+.mainpage-quickentry-welcome-top span{
+	padding-top: 15px;
+	padding-left: 5px;
+	line-height: 22px;
+	float: left;
+}
+.mainpage-quickentry-welcome-bottom a{
+	margin-left: 13px;
+	display: inline-block;
+	float: left;
+	width: 70px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	border: 2px solid #f10215;
+}
+.mainpage-quickentry-welcome-bottom a:hover{
+	background-color: #f10215;
+	color: #fff;
+}
+.mainpage-quickentry-news{
+	width: 160px;
+	padding: 0 15px;
+	height: 117px;
+	font-size: 12px;
+	border-bottom: 1px solid #ccc;
+}
+.mainpage-quickentry-news-title{
+	padding: 8px 0px 2px;
+	margin-bottom: 2px;
+	line-height: 16px;
+	border-bottom: 1px solid #ccc;
+}
+.mainpage-quickentry-news-title ul{
+	float: left;
+}
+.mainpage-quickentry-news-title ul li{
+	float: left;
+	padding: 0 15px 0px 15px;
+}
+.mainpage-quickentry-news-title ul li:nth-child(1){
+	border-right: 1px solid #ccc;
+	padding-left: 0;
+}
+.mainpage-quickentry-news-title .active{
+	border-bottom: 3px solid #f10215;
+}
+.mainpage-quickentry-news-title a{
+	float: right;
+}
+.mainpage-quickentry-news-content ul{
+	padding: 12px 0;
+	line-height: 20px;
+}
+.mainpage-quickentry-entry{
+	width: 190px;
+	height: 210px;
+}
+.mainpage-quickentry-mobile{
+	width: 190px;
+	height: 36px;
+	color: #eee;
+	font-size: 12px;
+	line-height: 36px;
+	text-align: center;
+	background-color: #60575a;
+}
+

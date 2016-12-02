@@ -1,0 +1,34 @@
+*{
+	color: #777;
+	margin: 0;
+	padding: 0;
+	font-family: "微软雅黑";
+}
+h3,h3 *{
+	color: #666;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: #c81623;
+}
+li{
+	list-style: none;
+}
+.clearfloat{
+	zoom:1;
+}
+.clearfloat:after{
+	display: block;
+	visibility: hidden;
+	content: "";
+	height: 0;
+	clear: both;
+}
+.colorred,.colorred *{
+	color: #f10215;
+}
+.colorblack,.colorblack *{
+	color: #333;
+}
