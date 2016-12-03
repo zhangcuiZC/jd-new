@@ -16,19 +16,3 @@ a:hover{
 li{
 	list-style: none;
 }
-.clearfloat{
-	zoom:1;
-}
-.clearfloat:after{
-	display: block;
-	visibility: hidden;
-	content: "";
-	height: 0;
-	clear: both;
-}
-.colorred,.colorred *{
-	color: #f10215;
-}
-.colorblack,.colorblack *{
-	color: #333;
-}
