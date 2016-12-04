@@ -79,7 +79,7 @@ function slideshow(thetime,thecolor){
 		top:(imgheight*0.5-liheight*0.75-10)+"px",
 		background: "rgba(0,0,0,0.4)",
 		textAlign:'center',
-		lineHeight:liheight*1.5+'px',
+		lineHeight:liheight*1.45+'px',
 		fontSize:'1.5em',
 		color:'#ddd',
 		cursor:'pointer'
