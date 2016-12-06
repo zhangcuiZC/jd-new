@@ -91,26 +91,71 @@ body{
 	background-color: #ddd;
 	margin: 0 auto 10px;
 }
-.hotsale{
+
+.rank{
 	position: absolute;
 	display: block;
+	height: 30px;
 	width: 30px;
-	height: 40px;
-	background: -webkit-linear-gradient(top, #f6c70c, #fb9106);
-	background: -o-linear-gradient(top, #f6c70c, #fb9106);
-	background: linear-gradient(to bottom, #f6c70c, #fb9106);
 	line-height: 30px;
+	font-size: 20px;
 	text-align: center;
 	color: #fff;
 }
-.hotsale:after{
+.rank .left{
 	position: absolute;
-	width: 0;
-	height: 0;
-	content: "";
+	display: block;
 	left: 0;
-	bottom: 0;
-	border-bottom: 10px solid #fff;
-	border-left: 15px solid transparent;
+	bottom: -10px;
+	height: 0;
+	width: 0;
 	border-right: 15px solid transparent;
+}
+.rank .right{
+	position: absolute;
+	display: block;
+	right: 0;
+	bottom: -10px;
+	height: 0;
+	width: 0;
+	border-left: 15px solid transparent;
+}
+.hotsale{
+	font-size: 12px !important;
+	background: -webkit-linear-gradient(top, #f6c70c, #fb9106);
+	background: -o-linear-gradient(top, #f6c70c, #fb9106);
+	background: linear-gradient(to bottom, #f6c70c, #fb9106);
+}
+.hotsale .left,.hotsale .right{
+	border-top: 10px solid #fb9106;
+}
+.rank1{
+	background: -webkit-linear-gradient(#e01222, #d00414);
+	background: -o-linear-gradient(#e01222, #d00414);
+	background: linear-gradient(#e01222, #d00414);
+}
+.rank1 .left,.rank1 .right{
+	border-top: 10px solid #d00414;
+}
+.rank2{
+	background: -webkit-linear-gradient(#f59104, #f47f36);
+	background: -o-linear-gradient(#f59104, #f47f36);
+	background: linear-gradient(#f59104, #f47f36);
+}
+.rank2 .left,.rank2 .right{
+	border-top: 10px solid #f47f36;
+}
+.rank3{
+	background: -webkit-linear-gradient(#f9cb15, #f8b913);
+	background: -o-linear-gradient(#f9cb15, #f8b913);
+	background: linear-gradient(#f9cb15, #f8b913);
+}
+.rank3 .left,.rank3 .right{
+	border-top: 10px solid #f8b913;
+}
+.rank456{
+	background: #888;
+}
+.rank456 .left,.rank456 .right{
+	border-top: 10px solid #888;
 }

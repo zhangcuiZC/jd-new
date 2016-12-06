@@ -10,7 +10,7 @@ h3,h3 *{
 a{
 	text-decoration: none;
 }
-a:hover{
+a:hover p,a:hover{
 	color: #c81623;
 }
 li{

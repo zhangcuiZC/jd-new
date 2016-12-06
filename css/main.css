@@ -515,3 +515,43 @@
 	font-size: 12px;
 	line-height: 20px;
 }
+.findbrandrank-list-rank-nav{
+	font-size: 14px;
+	width: 400px;
+	line-height: 14px;
+	height: 22px;
+	border-bottom: 1px solid #e7e7e7;
+}
+.findbrandrank-list-rank-nav li{
+	float: left;
+	cursor: pointer;
+	padding: 0 7px 7px 7px;
+}
+.findbrandrank-list-rank-nav li.active{
+	border-bottom: 2px solid red;
+}
+.findbrandrank-list-rank-content{
+	width: 380px;
+	height: 340px;
+	margin-top: 5px;
+}
+.findbrandrank-list-rank-content li{
+	float: left;
+	width: 123px;
+	height: 167px;
+	border-right: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	text-align: center;
+	overflow: hidden;
+}
+.findbrandrank-list-rank-content li a{
+	font-size: 12px;
+	display: inline-block;
+	padding: 10px;
+}
+.findbrandrank-list-rank-content li p{
+	margin-top: 10px;
+	line-height: 15px;
+	height: 30px;
+	overflow: hidden;
+}
