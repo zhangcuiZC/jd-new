@@ -246,40 +246,40 @@
 	margin-bottom: 2px;
 }
 .mainpage-quickentry-entry-phone{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat 0 -88px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat 0 -88px;
 }
 .mainpage-quickentry-entry-plane{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat 0 -45px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat 0 -45px;
 }
 .mainpage-quickentry-entry-movie{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -45px -45px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -45px -45px;
 }
 .mainpage-quickentry-entry-game{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -88px 0px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -88px 0px;
 }
 .mainpage-quickentry-entry-corp{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -88px -45px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -88px -45px;
 }
 .mainpage-quickentry-entry-gas{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat 0 0;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat 0 0;
 }
 .mainpage-quickentry-entry-hotel{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -45px -88px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -45px -88px;
 }
 .mainpage-quickentry-entry-train{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -89px -88px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -89px -88px;
 }
 .mainpage-quickentry-entry-crowd{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -132px 0;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -132px 0;
 }
 .mainpage-quickentry-entry-money{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -132px -45px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -132px -45px;
 }
 .mainpage-quickentry-entry-gift{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -133px -88px;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -133px -88px;
 }
 .mainpage-quickentry-entry-blank{
-	background: #fff url(../img/mainpage-quickentry-entry-sprite.png) no-repeat -44px 0;
+	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -44px 0;
 }
 
 .seckill{
@@ -303,9 +303,6 @@
 	vertical-align: middle;
 }
 .seckill-title-left span{
-	/*width: 230px;*/
-	/*margin-top: 12px;*/
-	/*line-height: 20px;*/
 	font-size: 13px;
 }
 .seckill-title-left span a:hover{
@@ -319,7 +316,7 @@
 	display: inline-block;
 	height: 35px;
 	width: 35px;
-	background: url(../img/seckill-title-icon.png) no-repeat 0 -40px;
+	background: url(../img/seckill/seckill-title-icon.png) no-repeat 0 -40px;
 }
 .seckill-title-left-arrow{
 	display: inline-block;
@@ -327,7 +324,7 @@
 	margin-top: 9px;
 	width: 20px;
 	height: 20px;
-	background: url(../img/seckill-title-icon.png) no-repeat -152px -39px;
+	background: url(../img/seckill/seckill-title-icon.png) no-repeat -152px -39px;
 }
 .seckill-title-right{
 	display: inline-block;
@@ -447,7 +444,7 @@
 	vertical-align: middle;
 	width: 20px;
 	height: 20px;
-	background: url(../img/seckill-title-icon.png) no-repeat -152px -39px;
+	background: url(../img/seckill/seckill-title-icon.png) no-repeat -152px -39px;
 }
 .findbrandrank-list-commoncontent{
 	width: 370px;
