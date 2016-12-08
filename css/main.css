@@ -1,3 +1,4 @@
+/*header style start*/
 .header{
 	height: 170px;
 	position: relative;
@@ -35,7 +36,7 @@
 }
 .header-searchbar-search .search{
 	width: 500px;
-	height: 25px;/*在IE中不设置height会出问题！*/
+	height: 25px;/*some problems will occur without height in IE！*/
 	line-height: 25px;
 	padding: 5px;
 	border: none;
@@ -76,7 +77,7 @@
 	padding-right: 10px;
 }
 .header-nav{
-	margin-top: 15px;
+	margin-top: 12px;
 	text-align: center;
 }
 .header-nav-list{
@@ -86,7 +87,10 @@
 	float: left;
 	padding: 0 12px;
 }
+/*header style end*/
 
+/*main page style start*/
+/*class in left part*/
 .mainpage-class{
 	float: left;
 	width: 190px;
@@ -97,18 +101,6 @@
 .mainpage-class *{
 	font-size: 14px;
 	color: #eee;
-}
-.mainpage-slideshow{
-	float: left;
-	width: 790px;
-	height: 480px;
-	margin-left: 10px;
-}
-.mainpage-quickentry{
-	float: right;
-	width: 190px;
-	height: 480px;
-	background-color: #fff;
 }
 .mainpage-class-list{
 	margin-top: 15px;
@@ -121,6 +113,13 @@
 }
 .mainpage-class-list li:hover{
 	background-color: #999395;
+}
+/*slideshow in middle*/
+.mainpage-slideshow{
+	float: left;
+	width: 790px;
+	height: 480px;
+	margin-left: 10px;
 }
 .mainpage-slideshow-top{
 	width: 790px;
@@ -138,6 +137,13 @@
 .mainpage-slideshow-bottom a:nth-child(2){
 	float: right;
 }
+/*quick entry in right part*/
+.mainpage-quickentry{
+	float: right;
+	width: 190px;
+	height: 480px;
+	background-color: #fff;
+}
 .mainpage-quickentry-welcome{
 	width: 190px;
 	height: 115px;
@@ -147,7 +153,7 @@
 .mainpage-quickentry-welcome-top img{
 	width: 45px;
 	height: 45px;
-	border: 1px solid transparent;/*使IE中的border-radius也能生效*/
+	border: 1px solid transparent;/*make sure border-radius available in IE*/
 	border-radius: 100%;
 	padding: 14px;
 	float: left;
@@ -245,6 +251,7 @@
 	height: 24px;
 	margin-bottom: 2px;
 }
+/*mainpage quick entry icon start*/
 .mainpage-quickentry-entry-phone{
 	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat 0 -88px;
 }
@@ -281,7 +288,10 @@
 .mainpage-quickentry-entry-blank{
 	background: #fff url(../img/mainpage/mainpage-quickentry-entry-sprite.png) no-repeat -44px 0;
 }
+/*mainpage quick entry icon end*/
+/*main page style end*/
 
+/*second kill style start*/
 .seckill{
 	margin-top: 10px;
 	margin-bottom: 30px;
@@ -347,7 +357,6 @@
 	text-align: center;
 	line-height: 32px;
 	font-size: 2em;
-
 }
 .seckill-title-right-break{
 	display: inline-block;
@@ -394,6 +403,9 @@
 	background-color: #e7e7e7;
 	padding: 0;
 }
+/*second kill style end*/
+
+/*find brand rank style start*/
 .findbrandrank-box{
 	width: 1190px;
 	overflow: hidden;
@@ -406,10 +418,8 @@
 	float: left;
 	width: 390px;
 	margin-right: 10px;
-	/*height: 444px;*/
 	background-color: #fff;
 }
-
 .findbrandrank-list-commontitle{
 	height: 55px;
 	line-height: 55px;
@@ -417,7 +427,6 @@
 	padding-right: 30px;
 }
 .findbrandrank-list-find-title{
-
 	background: -webkit-linear-gradient(left, #4998a1, #2e828b);
 	background: -o-linear-gradient(left, #4998a1, #2e828b);
 	background: linear-gradient(to right, #4998a1, #2e828b);
@@ -450,7 +459,6 @@
 	width: 370px;
 	height: 362px;
 	margin: 10px auto;
-	/*background-color: #ccc;*/
 	overflow: hidden;
 }
 .findbrandrank-list-find-content-list{
@@ -552,3 +560,545 @@
 	height: 30px;
 	overflow: hidden;
 }
+/*find brand rank style end*/
+
+/*ticket center style start*/
+.ticketcenter{
+	margin: 30px 0;
+}
+.ticketcenter-box{
+	overflow: hidden;
+}
+.ticketcenter-lgbox{
+	width: 1250px;
+}
+.ticketcenter-left{
+	float: left;
+	height: 215px;
+	width: 191px;
+	background-color: #ea3524;
+}
+.ticketcenter-left a{
+	display: block;
+	padding: 20px;
+	width: 150px;
+	height: 175px;
+}
+.ticketcenter-left a *{
+	color: #eee;
+}
+.ticketcenter-left a:hover *{
+	color: #eee;
+}
+.ticketcenter-left a>i{
+	display: block;
+	height: 3px;
+	width: 55px;
+	margin: 20px 0;
+	background-color: #e7e7e7;
+}
+.ticketcenter-left a p{
+	font-size: 12px;
+	margin-bottom: 20px;
+}
+.ticketcenter-left a span{
+	display: block;
+	height: 25px;
+	line-height: 25px;
+	padding-left: 20px;
+	width: 125px;
+	font-size: 12px;
+	border: 2px solid #e7e7e7;
+	position: relative;
+}
+.ticketcenter-left a span i{
+	display: block;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	right: 20px;
+	top: 3px;
+	background: url(../img/seckill-title-icon.png) no-repeat -152px -39px;
+}
+.ticketcenter-right{
+	float: left;
+	height: 195px;
+	padding: 10px 0 10px 0;
+	width: 1050px;
+	background-color: #fff;
+}
+.ticketcenter-right li{
+	float: left;
+	width: 199px;
+	height: 198px;
+	border-right: 1px solid #e7e7e7;
+	font-size: 12px;
+	position: relative;
+}
+.ticketcenter-right li a{
+	display: block;
+	width: 199px;
+	height: 198px;
+}
+.ticketcenter-right li a img{
+	position: absolute;
+	right: 15px;
+	top: 25px;
+}
+.ticketcenter-right li a div{
+	position: absolute;
+	width: 100px;
+	height: 180px;
+	left: 15px;
+	bottom: 0;
+	background-color: #fff;
+	border-top: 3px solid #ea3524;
+}
+.ticketcenter-right li a div span{
+	color: #ea3524;
+}
+.ticketcenter-right li a div span span{
+	font-size: 35px;
+	font-weight: bold;
+}
+.ticketcenter-right li a div p:nth-child(2){
+	color: #ea3524;
+	margin: 5px;
+	line-height: 15px;
+	height: 30px;
+	overflow: hidden;
+}
+.ticketcenter-right li a div p:nth-child(3){
+	line-height: 15px;
+	height: 30px;
+	padding: 15px 10px;
+	border-top: 4px dotted #fff;
+	background-color: #eee;
+}
+.ticketcenter-right li a div p:nth-child(4){
+	color: #e7e7e7;
+	width: 100%;
+	height: 26px;
+	background-color: #ea3524;
+	line-height: 26px;
+	text-align: center;
+}
+/*ticket center style end*/
+
+/*enjoy quality style start*/
+.enjoyquality{
+	margin-bottom: 20px;
+}
+.enjoyquality-box{
+	overflow: hidden;
+}
+.enjoyquality-list{
+	width: 1250px;
+	margin-top: 15px;
+	height: 350px;
+}
+.enjoyquality-list li{
+	float: left;
+	width: 390px;
+	height: 170px;
+	margin: 0 10px 10px 0;
+	background-color: #fff;
+	overflow: hidden;
+	position: relative;
+}
+.enjoyquality-list li div{
+	position: absolute;
+	width: 140px;
+	height: 170px;
+	left: 0;
+	top: 0;
+	text-align: center;
+}
+.enjoyquality-list li div *{
+	color: #eee;
+}
+.enjoyquality-list li div h3{
+	display: inline-block;
+	width: 100px;
+	margin: 40px 0 10px 0;
+	padding: 5px 0;
+	border-top: 2px solid #e7e7e7;
+	border-bottom: 2px solid #e7e7e7;
+}
+.enjoyquality-list li div p{
+	display: inline-block;
+	width: 100px;
+	line-height: 16px;
+	height: 32px;
+	overflow: hidden;
+	font-size: 14px;
+	text-align: left;
+}
+.enjoyquality-list-item1 div{
+	background: rgba(213, 135, 23, 0.8);
+}
+.enjoyquality-list-item2 div{
+	background: rgba(73, 140, 148, 0.8);
+}
+.enjoyquality-list-item3 div{
+	background: rgba(92, 85, 102, 0.8);
+}
+.enjoyquality-list-item4 div{
+	background: rgba(176, 73, 66, 0.8);
+}
+.enjoyquality-list-item5 div{
+	background: rgba(110, 53, 110, 0.8);
+}
+.enjoyquality-list-item6 div{
+	background: rgba(134, 99, 80, 0.8);
+}
+/*enjoy quality style end*/
+
+/*love life style start*/
+.lovelife-box{
+	overflow: hidden;
+}
+.lovelife-list{
+	width: 1250px;
+}
+	/*//lovelife common tilte style start//*/
+.lovelife-list-title{
+	width: 100%;
+	height: 58px;
+	line-height: 56px;
+}
+.lovelife-list-title *{
+	color: #fff;
+}
+.lovelife-list-title h3{
+	float: left;
+	margin-left: 20px;
+}
+.lovelife-list-title ul{
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+.lovelife-list-title ul li{
+	float: left;
+	margin-left: 10px;
+}
+.lovelife-list-title ul li a{
+	display: inline-block;
+	padding: 0 10px;
+	height: 24px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 24px;
+	font-size: 12px;
+	border: 1px solid rgba(255,255,255,0.3);
+	background: rgba(255,255,255,0.2);
+}
+.lovelife-list-title ul li a:hover{
+	border: 1px solid #fff;
+	color: #fff;
+}
+	/*//lovelife common title end//*/
+	/*lovelife common content style start*/
+.lovelife-list-content{
+	width: 570px;
+	float: left;
+	margin: 10px;
+	overflow: hidden;
+}
+.lovelife-list-content:nth-last-child(1){
+	/*the second part float right in col1*/
+	float: right;
+}
+.lovelife-list-content-divide{
+	float: left;
+	width: 0;
+	height: 400px;
+	margin-top: 10px;
+	margin-left: 4px;
+	border-right: 1px solid #e7e7e7;
+}
+.lovelife-list-content-box{
+	width: 600px;
+}
+.lovelife-list-content-leimg{
+	float: left;
+	width: 183px;
+	height: 260px;
+	margin-right: 10px;
+	overflow: hidden;
+}
+.lovelife-list-content-riimg{
+	width: 400px;
+	height: 260px;
+	overflow: hidden;
+	float: left;
+}
+.lovelife-list-content-riimg li{
+	float: left;
+	width: 188px;
+	height: 130px;
+	border-right: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
+	position: relative;
+}
+.lovelife-list-content-riimg a{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.lovelife-list-content-riimg a img{
+	position: absolute;
+	right: 5px;
+	bottom: 10px;
+}
+.lovelife-list-content-riimg a p:nth-child(1){
+	position: absolute;
+	font-size: 14px;
+	left: 25px;
+	top: 25px;
+	width: 140px;
+	z-index: 1;
+}
+.lovelife-list-content-riimg a p:nth-child(2){
+	position: absolute;
+	font-size: 12px;
+	width: 50px;
+	line-height: 15px;
+	height: 45px;
+	overflow: hidden;
+	left: 25px;
+	top: 55px;
+}
+.lovelife-list-content-mdimg{
+	width: 580px;
+}
+.lovelife-list-content-mdimg li{
+	float: left;
+	margin-right: 10px;
+	margin-top: 10px;
+}
+.lovelife-list-content-mdimg li a{
+	display: inline-block;
+	width: 183px;
+	height: 130px;
+	overflow: hidden;
+}
+.lovelife-smbox{
+	width: 200px !important;
+}
+.lovelife-list-content-smbox{
+	width: 410px !important;
+}
+.lovelife-list-smcontent{
+	width: 370px !important;
+}
+	/*lovelife common content style end*/
+	/*lovelife special title backgroundcolor start*/
+.lovelife-list-item1 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #974676, #9e4075);
+	background: -o-linear-gradient(left, #974676, #9e4075);
+	background: linear-gradient(to right, #974676, #9e4075);
+}
+.lovelife-list-item1 .lovelife-list-content ul li a p:nth-child(1){
+	color: #9e4075;
+}
+.lovelife-list-item2 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #cd375e, #c1314d);
+	background: -o-linear-gradient(left, #cd375e, #c1314d);
+	background: linear-gradient(to right, #cd375e, #c1314d);
+}
+.lovelife-list-item2 .lovelife-list-content ul li a p:nth-child(1){
+	color: #c1314d;
+}
+.lovelife-list-item3 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #78538e, #674083);
+	background: -o-linear-gradient(left, #78538e, #674083);
+	background: linear-gradient(to right, #78538e, #674083);
+}
+.lovelife-list-item3 .lovelife-list-content ul li a p:nth-child(1){
+	color: #674083;
+}
+.lovelife-list-item4 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #5e6c90, #4c5e8c);
+	background: -o-linear-gradient(left, #5e6c90, #4c5e8c);
+	background: linear-gradient(to right, #5e6c90, #4c5e8c);
+}
+.lovelife-list-item4 .lovelife-list-content ul li a p:nth-child(1){
+	color: #4c5e8c;
+}
+.lovelife-list-item5 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #488bad, #337e8d);
+	background: -o-linear-gradient(left, #488bad, #337e8d);
+	background: linear-gradient(to right, #488bad, #337e8d);
+}
+.lovelife-list-item5 .lovelife-list-content ul li a p:nth-child(1){
+	color: #337e8d;
+}
+.lovelife-list-item6 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #3aaba9, #299b9a);
+	background: -o-linear-gradient(left, #3aaba9, #299b9a);
+	background: linear-gradient(to right, #3aaba9, #299b9a);
+}
+.lovelife-list-item6 .lovelife-list-content ul li a p:nth-child(1){
+	color: #299b9a;
+}
+.lovelife-list-item7 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #568e7d, #447e6c);
+	background: -o-linear-gradient(left, #568e7d, #447e6c);
+	background: linear-gradient(to right, #568e7d, #447e6c);
+}
+.lovelife-list-item7 .lovelife-list-content ul li a p:nth-child(1){
+	color: #447e6c;
+}
+.lovelife-list-item8 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #eeb924, #e49433);
+	background: -o-linear-gradient(left, #eeb924, #e49433);
+	background: linear-gradient(to right, #eeb924, #e49433);
+}
+.lovelife-list-item8 .lovelife-list-content ul li a p:nth-child(1){
+	color: #e49433;
+}
+.lovelife-list-item9 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #e16c46, #e85629);
+	background: -o-linear-gradient(left, #e16c46, #e85629);
+	background: linear-gradient(to right, #e16c46, #e85629);
+}
+.lovelife-list-item9 .lovelife-list-content ul li a p:nth-child(1){
+	color: #e85629;
+}
+.lovelife-list-item10 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #a56741, #925937);
+	background: -o-linear-gradient(left, #a56741, #925937);
+	background: linear-gradient(to right, #a56741, #925937);
+}
+.lovelife-list-item10 .lovelife-list-content ul li a p:nth-child(1){
+	color: #925937;
+}
+.lovelife-list-item11 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #756059, #684c44);
+	background: -o-linear-gradient(left, #756059, #684c44);
+	background: linear-gradient(to right, #756059, #684c44);
+}
+.lovelife-list-item11 .lovelife-list-content ul li a p:nth-child(1){
+	color: #684c44;
+}
+.lovelife-list-item12 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #865454, #7e3b3c);
+	background: -o-linear-gradient(left, #865454, #7e3b3c);
+	background: linear-gradient(to right, #865454, #7e3b3c);
+}
+.lovelife-list-item12 .lovelife-list-content ul li a p:nth-child(1){
+	color: #7e3b3c;
+}
+.lovelife-list-item13 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #6467a0, #544b8f);
+	background: -o-linear-gradient(left, #6467a0, #544b8f);
+	background: linear-gradient(to right, #6467a0, #544b8f);
+}
+.lovelife-list-item13 .lovelife-list-content ul li a p:nth-child(1){
+	color: #544b8f;
+}
+.lovelife-list-item14 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #5981a3, #41698b);
+	background: -o-linear-gradient(left, #5981a3, #41698b);
+	background: linear-gradient(to right, #5981a3, #41698b);
+}
+.lovelife-list-item14 .lovelife-list-content ul li a p:nth-child(1){
+	color: #41698b;
+}
+.lovelife-list-item15 .lovelife-list-title{
+	background: -webkit-linear-gradient(left, #5a7259, #425f41);
+	background: -o-linear-gradient(left, #5a7259, #425f41);
+	background: linear-gradient(to right, #5a7259, #425f41);
+}
+.lovelife-list-item15 .lovelife-list-content ul li a p:nth-child(1){
+	color: #425f41;
+}
+	/*lovelife special title backgroundcolor end*/
+.lovelife-list-col2{
+	float: left;
+	width: 590px;
+	height: 523px;
+	margin-right: 10px;
+	margin-bottom: 30px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.lovelife-list-col1{
+	float: left;
+	width: 1190px;
+	height: 523px;
+	margin-bottom: 30px;
+	background-color: #fff;
+	overflow: hidden;
+}
+.lovelife-list-col3{
+	float: left;
+	width: 390px;
+	height: 523px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+	overflow: hidden;
+	background-color: #fff;
+}
+/*love life style end*/
+
+/*buy unique style start*/
+.buyunique{
+	text-align: center;
+	margin-bottom: 30px;
+}
+.buyunique *{
+	color: #eee;
+}
+.buyunique-list{
+	display: inline-block;
+}
+.buyunique-list li{
+	float: left;
+	margin: 0 5px;
+	position: relative;
+}
+.buyunique-list li a{
+	display: block;
+	width: 160px;
+	height: 140px;
+}
+.buyunique-list li a:hover *{
+	color: #eee;
+}
+.buyunique-list li div{
+	position: absolute;
+	width: 100%;
+	height: 44px;
+	padding: 8px 0;
+	bottom: 0;
+}
+.buyunique-list li div p{
+	font-size: 12px;
+}
+	/*buy unique info background color start*/
+.buyunique-list-item1 div{
+	background: rgba(136,96,73,0.8);
+}
+.buyunique-list-item2 div{
+	background: rgba(116,86,123,0.8);
+}
+.buyunique-list-item3 div{
+	background: rgba(202,48,48,0.8);
+}
+.buyunique-list-item4 div{
+	background: rgba(69,146,99,0.8);
+}
+.buyunique-list-item5 div{
+	background: rgba(218,91,64,0.8);
+}
+.buyunique-list-item6 div{
+	background: rgba(79,135,177,0.8);
+}
+.buyunique-list-item7 div{
+	background: rgba(213,187,9,0.8);
+}
+	/*buy unique info background color end*/
+/*buy unique style end*/
