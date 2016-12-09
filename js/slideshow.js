@@ -174,5 +174,25 @@ function slideshow(thetime,thecolor){
 }
 
 $(function(){
+	// slideshow start
 	slideshow(5000,"#f10215");
+
+	// // second kill img animation
+	$(".seckill-content li:lt(5)").addClass('moveup');
+
+	// // find img animation
+	$(".findbrandrank-list-find-content-list li").addClass('moveleft');
+
+	// // brand im animation
+	$(".findbrandrank-list-brand-content-list li").addClass('moveleft');
+
+	// //ticket center animation
+	$(".ticketcenter-right li").addClass('moveright');
+
+	// // enjoy quality animation
+	$(".enjoyquality-list li").addClass('moveleft');
+
+	// // love life animation
+	$(".lovelife-list-content a").addClass('moveleft');
+
 });

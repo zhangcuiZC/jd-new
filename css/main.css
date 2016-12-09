@@ -388,8 +388,16 @@
 	text-align: left;
 }
 .seckill-content-list img{
+	position: relative;
 	display: block;
 	margin: 0 auto 10px;
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+	transform: translateY(0);
 }
 .seckill-content-list li a p{
 	line-height: 1.3em;
@@ -476,20 +484,32 @@
 	display: inline-block;
 	width: 185px;
 	height: 120px;
+	text-align: right;
 }
 .findbrandrank-list-find-content-list img{
-	position: absolute;
-	right: 10px;
-	bottom: 10px;
+	position: relative;
+	margin-right: 10px;
+	margin-top: 30px;
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
 }
 .findbrandrank-list-find-content-list span{
-	display: inline-block;
+	position: absolute;
+	display: block;
 	width: 80px;
 	height: 40px;
 	color: #2e828b;
 	font-size: 14px;
 	line-height: 20px;
-	margin: 15px;
+	left: 15px;
+	top: 15px;
+	text-align: left;
+	z-index: 99;
 }
 .findbrandrank-list-brand-content-list{
 	width: 380px;
@@ -503,8 +523,16 @@
 	border-right: 1px solid #e7e7e7;
 }
 .findbrandrank-list-brand-content-list li img{
+	position: relative;
 	display: block;
 	margin: 0 auto;
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
 }
 .findbrandrank-list-brand-content-list li i{
 	display: block;
@@ -618,7 +646,7 @@
 	height: 20px;
 	right: 20px;
 	top: 3px;
-	background: url(../img/seckill-title-icon.png) no-repeat -152px -39px;
+	background: url(../img/seckill/seckill-title-icon.png) no-repeat -152px -39px;
 }
 .ticketcenter-right{
 	float: left;
@@ -641,9 +669,16 @@
 	height: 198px;
 }
 .ticketcenter-right li a img{
-	position: absolute;
-	right: 15px;
-	top: 25px;
+	position: relative;
+	margin-left: 45px;
+	margin-top: 25px;
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
 }
 .ticketcenter-right li a div{
 	position: absolute;
@@ -705,6 +740,16 @@
 	background-color: #fff;
 	overflow: hidden;
 	position: relative;
+}
+.enjoyquality-list li img{
+	position: relative;
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
 }
 .enjoyquality-list li div{
 	position: absolute;
@@ -821,6 +866,16 @@
 .lovelife-list-content-box{
 	width: 600px;
 }
+.lovelife-list-content img{
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(0);
+	-ms-transform: translateX(0);
+	-o-transform: translateX(0);
+	transform: translateX(0);
+	position: relative;
+}
 .lovelife-list-content-leimg{
 	float: left;
 	width: 183px;
@@ -848,9 +903,8 @@
 	height: 100%;
 }
 .lovelife-list-content-riimg a img{
-	position: absolute;
-	right: 5px;
-	bottom: 10px;
+	margin-left: 83px;
+	margin-top: 20px;
 }
 .lovelife-list-content-riimg a p:nth-child(1){
 	position: absolute;
@@ -858,7 +912,7 @@
 	left: 25px;
 	top: 25px;
 	width: 140px;
-	z-index: 1;
+	z-index: 99;
 }
 .lovelife-list-content-riimg a p:nth-child(2){
 	position: absolute;
@@ -869,6 +923,7 @@
 	overflow: hidden;
 	left: 25px;
 	top: 55px;
+	z-index: 99;
 }
 .lovelife-list-content-mdimg{
 	width: 580px;
@@ -1102,3 +1157,133 @@
 }
 	/*buy unique info background color end*/
 /*buy unique style end*/
+
+/*footer style start*/
+.footer{
+	background-color: #eaeaea;
+}
+	/*footer slogans part start*/
+.footer-slogans{
+	padding: 30px 0;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+.footer-slogans ul{
+	display: inline-block;
+	height: 42px;
+	line-height: 40px;
+}
+.footer-slogans ul li{
+	float: left;
+	margin-right: 100px;
+}
+.footer-slogans-item4{
+	margin-right: 0 !important;
+}
+.footer-slogans li i{
+	float: left;
+	height: 42px;
+	width: 42px;
+	overflow: hidden;
+}
+.footer-slogans li h3{
+	float: left;
+}
+.footer-slogans-item1 i{
+	background: url(../img/footer-slogans-img.png) no-repeat 0 0;
+}
+.footer-slogans-item2 i{
+	background: url(../img/footer-slogans-img.png) no-repeat 0 -43px;
+}
+.footer-slogans-item3 i{
+	background: url(../img/footer-slogans-img.png) no-repeat 0 -86px;
+}
+.footer-slogans-item4 i{
+	background: url(../img/footer-slogans-img.png) no-repeat 0 -129px;
+}
+	/*footer slogans part end*/
+.footer-sevice{
+	width: 100%;
+	padding: 20px 0;
+	border-bottom: 1px solid #ddd;
+}
+.footer-sevice-table{
+	float: left;
+	font-size: 12px;
+	line-height: 20px;
+}
+.footer-sevice-table thead{
+	text-align: left;
+	font-size: 14px;
+}
+.footer-sevice-table td{
+	width: 200px;
+}
+.footer-sevice-table td:nth-last-child(1){
+	width: 100px;
+}
+.footer-sevice-info{
+	width: 200px;
+	height: 150px;
+	float: right;
+	background: url(../img/footer-info.png) no-repeat 0 0;
+}
+.footer-sevice-info p{
+	padding: 0 10px;
+	font-size: 12px;
+}
+.footer-sevice-info h5{
+	text-align: center;
+	margin-bottom: 20px;
+}
+.footer-sevice-info p:nth-last-child(1){
+	text-align: right;
+}
+.footer-lists{
+	font-size: 12px;
+	padding: 20px 0;
+	text-align: center;
+}
+.footer-lists *{
+	color: #999;
+}
+.footer-lists-links{
+	
+	margin-bottom: 10px;
+}
+.footer-lists-links a{
+	color: #777;
+}
+.footer-lists-links a:hover{
+	color: #c81623;
+}
+.footer-lists ul{
+	display: inline-block;
+}
+.footer-lists li{
+	float: left;
+	margin: 0 5px;
+}
+.footer-lists-icons li a{
+	display: block;
+	width: 103px;
+	height: 32px;
+}
+.footer-lists-icons-item1{
+	background: url(../img/footer-info.png) no-repeat 0 -151px;
+}
+.footer-lists-icons-item2{
+	background: url(../img/footer-info.png) no-repeat -104px -151px;
+}
+.footer-lists-icons-item3{
+	background: url(../img/footer-info.png) no-repeat 0 -184px;
+}
+.footer-lists-icons-item4{
+	background: url(../img/footer-info.png) no-repeat -104px -184px;
+}
+.footer-lists-icons-item5{
+	background: url(../img/footer-info.png) no-repeat 0 -217px;
+}
+.footer-lists-icons-item6{
+	background: url(../img/footer-info.png) no-repeat -104px -217px;
+}

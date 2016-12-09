@@ -103,6 +103,7 @@ body{
 	font-size: 20px;
 	text-align: center;
 	color: #fff;
+	z-index: 99;
 }
 .rank .left{
 	position: absolute;
@@ -191,3 +192,33 @@ body{
 	text-align: center;
 	color: #666;
 }
+
+/*img move style start*/
+.moveup:hover img{
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateY(-5px);
+	-ms-transform: translateY(-5px);
+	-o-transform: translateY(-5px);
+	transform: translateY(-5px);
+}
+.moveleft:hover img{
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	-o-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+.moveright:hover img{
+	-webkit-transition: transform 0.4s;
+	-o-transition: transform 0.4s;
+	transition: transform 0.4s;
+	-webkit-transform: translateX(12px);
+	-ms-transform: translateX(12px);
+	-o-transform: translateX(12px);
+	transform: translateX(12px);
+}
+/*img move style end*/
