@@ -167,6 +167,7 @@ body{
 .adsbar{
 	background-color: #e0e0e0;
 	margin-bottom: 30px;
+	height: 100px;
 }
 .adsbar img{
 	float: left;

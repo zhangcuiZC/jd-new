@@ -184,6 +184,7 @@
 	height: 117px;
 	font-size: 12px;
 	border-bottom: 1px solid #ccc;
+	overflow: hidden;
 }
 .mainpage-quickentry-news-title{
 	padding: 8px 0px 2px;
@@ -202,8 +203,11 @@
 	border-right: 1px solid #ccc;
 	padding-left: 0;
 }
-.mainpage-quickentry-news-title .active{
+.mainpage-quickentry-news-title span.active{
 	border-bottom: 3px solid #f10215;
+}
+.mainpage-quickentry-news-title span{
+	cursor: pointer;
 }
 .mainpage-quickentry-news-title a{
 	float: right;
@@ -586,7 +590,10 @@
 	margin-top: 10px;
 	line-height: 15px;
 	height: 30px;
+	width: 103px;
 	overflow: hidden;
+	word-break: break-all;
+	word-wrap: break-word;
 }
 /*find brand rank style end*/
 

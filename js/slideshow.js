@@ -35,10 +35,13 @@ function slideshow(thetime,thecolor){
 		height:'13%',
 	});
 	var liheight=$(".outerbox .infobox").height();
-	$(".outerbox .infobox").append('<ul></ul>');
+
+	var lists="";
 	for(var i=0;i<imgnum;i++){
-		$(".outerbox .infobox ul").append('<li><a href=""><span></span></a></li>');
+		lists+="<li><a href=''><span></span></a></li>";
 	}
+	var ullists="<ul>"+lists+"</ul>";
+	$(".outerbox .infobox").append($(ullists));
 	$(".outerbox .infobox ul").css({
 		height: liheight+"px",
 		paddingLeft:'0',
@@ -67,11 +70,14 @@ function slideshow(thetime,thecolor){
 		paddingRight:liheight*0.2+"px",
 		verticalAlign: 'middle',
 		color:'#ddd',
-		fontSize:'12px'
+		fontSize:'12px',
+		wordBreak:'break-all',
+		height:'2.2em',
+		overflow:'hidden'
 	});
 	//增加箭头
-	$(".outerbox").append('<div class="leftarrow arrow">&lt;</div>');
-	$(".outerbox").append('<div class="rightarrow arrow">&gt;</div>');
+	var arrows='<div class="leftarrow arrow">&lt;</div><div class="rightarrow arrow">&gt;</div>';
+	$(".outerbox").append($(arrows));
 	$(".outerbox .arrow").css({
 		width:liheight*0.8+"px",
 		height: liheight*1.5+"px",
@@ -172,27 +178,3 @@ function slideshow(thetime,thecolor){
 		}
 	}
 }
-
-$(function(){
-	// slideshow start
-	slideshow(5000,"#f10215");
-
-	// // second kill img animation
-	$(".seckill-content li:lt(5)").addClass('moveup');
-
-	// // find img animation
-	$(".findbrandrank-list-find-content-list li").addClass('moveleft');
-
-	// // brand im animation
-	$(".findbrandrank-list-brand-content-list li").addClass('moveleft');
-
-	// //ticket center animation
-	$(".ticketcenter-right li").addClass('moveright');
-
-	// // enjoy quality animation
-	$(".enjoyquality-list li").addClass('moveleft');
-
-	// // love life animation
-	$(".lovelife-list-content a").addClass('moveleft');
-
-});
