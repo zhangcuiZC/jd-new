@@ -92,13 +92,13 @@
 /*main page style start*/
 /*class in left part*/
 .mainpage-class{
+	position: relative;
 	float: left;
 	width: 190px;
 	height: 480px;
-	color: #eee;
 	background-color: #6c6669;
 }
-.mainpage-class *{
+.mainpage-class-list *{
 	font-size: 14px;
 	color: #eee;
 }
@@ -114,6 +114,85 @@
 .mainpage-class-list li:hover{
 	background-color: #999395;
 }
+.mainpage-class-detail{
+	position: absolute;
+	top: 0;
+	left: 190px;
+	width: 1000px;
+	min-height: 480px;
+	background-color: #fff;
+	z-index: 999;
+	box-shadow: 2px 2px 4px #ccc;
+	display: none;
+}
+.mainpage-class-detail .detailitem{
+	float: left;
+	font-size: 12px;
+	width: 780px;
+	line-height: 32px;
+	margin-left: 10px;
+}
+.mainpage-class-detail td{
+	border-bottom: 1px solid #e7e7e7;
+}
+.mainpage-class-detail td.lasttd{
+	border: none;
+}
+.mainpage-class-detail th{
+	vertical-align: top;
+}
+.mainpage-class-detail td a{
+	padding: 0 6px;
+	border-left: 1px solid #e7e7e7;
+}
+.mainpage-class-detail .topentry{
+	float: left;
+	margin-left: 10px;
+	padding-top: 15px;
+	line-height: 24px;
+	height: 24px;
+	font-size: 12px;
+}
+.mainpage-class-detail .topentry li{
+	float: left;
+	margin-right: 10px;
+}
+.mainpage-class-detail .topentry a{
+	display: block;
+	padding: 0 10px;
+	color: #eee;
+	background-color: #6c6669;
+}
+.mainpage-class-detail .topentry a:hover{
+	background-color: #555;
+}
+.mainpage-class-detail .rightpic{
+	margin-top: -20px;
+	width: 172px;
+	float: right;
+	margin-right: 15px;
+}
+.mainpage-class-detail .rightpic ul{
+	float: left;
+	margin-bottom: 10px;
+}
+.mainpage-class-detail .rightpic li{
+	font-size: 0;
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+.mainpage-class-detail .rightpic >img{
+	float: left;
+	margin-bottom: 1px;
+}
+
+
+
+
+
+
+
 /*slideshow in middle*/
 .mainpage-slideshow{
 	float: left;
@@ -147,7 +226,7 @@
 .mainpage-quickentry-welcome{
 	width: 190px;
 	height: 115px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #e7e7e7;
 	font-size: 12px;
 }
 .mainpage-quickentry-welcome-top img{
@@ -183,14 +262,14 @@
 	padding: 0 15px;
 	height: 117px;
 	font-size: 12px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #e7e7e7;
 	overflow: hidden;
 }
 .mainpage-quickentry-news-title{
 	padding: 8px 0px 2px;
 	margin-bottom: 2px;
 	line-height: 16px;
-	border-bottom: 1px solid #ccc;
+	border-bottom: 1px solid #e7e7e7;
 }
 .mainpage-quickentry-news-title ul{
 	float: left;
@@ -200,7 +279,7 @@
 	padding: 0 15px 0px 15px;
 }
 .mainpage-quickentry-news-title ul li:nth-child(1){
-	border-right: 1px solid #ccc;
+	border-right: 1px solid #e7e7e7;
 	padding-left: 0;
 }
 .mainpage-quickentry-news-title span.active{
@@ -236,8 +315,8 @@
 }
 .mainpage-quickentry-entry-list li{
 	float: left;
-	border-right: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #e7e7e7;
+	border-bottom: 1px solid #e7e7e7;
 	text-align: center;
 }
 .mainpage-quickentry-entry-list li:hover{
