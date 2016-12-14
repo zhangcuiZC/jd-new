@@ -19,11 +19,22 @@
 .header-shortcut-loginlist{
 	line-height: 30px;
 	float: right;
+	font-size: 0;
 }
 .header-shortcut-loginlist li{
 	display: inline-block;
-	float: left;
-	padding: 0 5px;
+	vertical-align: middle;
+}
+.header-shortcut-loginlist li a{
+	font-size: 12px;
+	display: block;
+	height: 1em;
+	line-height: 1em;
+	padding: 0 10px;
+	border-left: 1px solid #ccc;
+}
+.header-shortcut-loginlist li:nth-child(1) a,.header-shortcut-loginlist li:nth-child(2) a{
+	border: none;
 }
 .header-searchbar{
 	text-align: center;
