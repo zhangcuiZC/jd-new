@@ -136,6 +136,9 @@
 	box-shadow: 1px 1px 4px #666;
 	display: none;
 }
+.mainpage-class-detail-placeholder{
+	margin: 200px 0 0 495px;
+}
 .mainpage-class-detail .detailitem{
 	float: left;
 	font-size: 12px;

@@ -65,7 +65,7 @@ $(function(){
 		detailurl="detailclass/detailclass-"+(listidx+1)+".html";
 		detailclass="mainpage-class-detail"+(listidx+1);
 		detaildivlist.eq(listidx).show().siblings('.mainpage-class-detail').hide();
-		content=detaildivlist.eq(listidx).html();
+		content=detaildivlist.eq(listidx).text();
 		if (content=="") {
 			detaildivlist.eq(listidx).load(detailurl);
 		}
