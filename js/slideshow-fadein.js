@@ -180,6 +180,6 @@ function slideshowFadein(thetime,thecolor){
 	}
 	//切换图片
 	function showpic(index){
-		$(".outerbox >a").eq(index).stop(true,true).fadeIn(600).siblings('a').hide(400);
+		$(".outerbox >a").stop(true,true).eq(index).fadeIn(600).siblings('a').hide(400);
 	}
 }
