@@ -21,7 +21,7 @@ function slideshowFadein(thetime,thecolor){
 	var imgnum=$(".outerbox img").length;
 	var imgwidth=$(".outerbox").width();
 	var imgheight=$(".outerbox").height();
-	$(".outerbox img").css({
+	$(".outerbox >a").css({
 		position: 'absolute',
 		left:'0',
 		top:'0'
@@ -180,6 +180,6 @@ function slideshowFadein(thetime,thecolor){
 	}
 	//切换图片
 	function showpic(index){
-		$(".outerbox a").stop(true).eq(index).fadeIn().siblings('a').fadeOut();
+		$(".outerbox >a img").eq(index).stop(true).fadeIn(400).parent().siblings('a').find('img').hide(400);
 	}
 }
