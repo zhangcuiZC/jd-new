@@ -1,5 +1,6 @@
 $(function(){
 	// slideshow start
+	//need slideshow-fadein.js
 	slideshowFadein(5000,"#f10215");
 
 	// // second kill img animation
@@ -23,7 +24,7 @@ $(function(){
 	// img lazy load
 	$(".imglazyload img").lazyload({
 		effect:"fadeIn",
-		failure_limit:5,
+		failure_limit:15,
 		data_attribute:'src',
 		placeholder:'img/imgloading.gif'
 	});
@@ -82,4 +83,13 @@ $(function(){
 		detaildivlist.hide();
 	});
 	})();
+
+	//small img slide
+	//need jquery.smimgslide.js
+	$(".lovelife-list-smimg").each(function() {
+		$(this).smimgslide();
+	});
+
+
+
 });

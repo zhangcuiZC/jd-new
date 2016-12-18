@@ -1030,6 +1030,7 @@
 }
 .lovelife-list-content-mdimg li{
 	float: left;
+	height: 130px;
 	margin-right: 10px;
 	margin-top: 10px;
 }
@@ -1197,6 +1198,70 @@
 	overflow: hidden;
 	background-color: #fff;
 }
+.lovelife-list-smimg{
+	position: relative;
+	float: left;
+	width: 100%;
+	line-height: 30px;
+	// background-color: #ccc;
+}
+.lovelife-list-smimg-box{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 2500px;
+	height: 35px;
+	z-index: 1;
+}
+.lovelife-list-smimg ul{
+	font-size: 0;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+	height: 35px;
+}
+.lovelife-list-col1 .lovelife-list-smimg-box{
+	margin-left: 15px;
+}
+.lovelife-list-smimg li{
+	float: left;
+	width: 94px;
+	height: 35px;
+	text-align: center;
+	border-right: 1px solid #e7e7e7;
+}
+.lovelife-list-smimg ul li:nth-last-child(1){
+	border: none;
+}
+.lovelife-list-smimg-leftarrow{
+	position: absolute;
+	line-height: 35px;
+	padding-left: 5px;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	display: none;
+	cursor: pointer;
+	z-index: 2;
+}
+.lovelife-list-smimg-rightarrow{
+	position: absolute;
+	line-height: 35px;
+	padding-right: 5px;
+	top: 0;
+	right: 0;
+	background-color: #fff;
+	display: none;
+	cursor: pointer;
+	z-index: 2;
+}
+.lovelife-list-smimg-leftarrow:hover,.lovelife-list-smimg-rightarrow:hover{
+	color: #c81623;
+}
+
+
+
+
 /*love life style end*/
 
 /*buy unique style start*/
