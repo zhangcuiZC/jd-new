@@ -90,6 +90,19 @@ $(function(){
 		$(this).smimgslide();
 	});
 
-
-
+	(function(){
+		var nolock=true;
+		$(window).scroll(function() {
+			if($(".seckill").offset().top-$(window).scrollTop()<=0){
+				if (nolock) {
+					$(".header-searchbarfixed").stop().animate({top:0}, "normal");
+				}
+				nolock=false;
+			}else{
+				$(".header-searchbarfixed").css('top', '-70px');
+				nolock=true;
+			}
+		});
+		$(window).trigger('scroll');
+	})();
 });

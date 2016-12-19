@@ -42,7 +42,7 @@
 	position: relative;
 	font-size: 12px;
 }
-.header-searchbar>div{
+.header-searchbar-search,.header-searchbar-cart{
 	display: inline-block;
 }
 .header-searchbar-search .search{
@@ -73,6 +73,39 @@
 	line-height: 35px;
 	border: 1px solid #ccc;
 	background-color: #fff;
+}	
+	/*searchbarfixed*/
+.header-searchbarfixed{
+	background-color: rgba(255, 255, 255, 0.9);
+	height: 58px;
+	line-height: 58px;
+	width: 100%;
+	border-bottom: 2px solid #f10241;
+	text-align: center;
+	position: fixed;
+	top: -70px;
+	z-index: 999;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.header-searchbarfixed .search{
+	background-color: #eee;
+}
+.header-searchbarfixed .header-searchbar-search{
+	vertical-align: middle;
+	border: none;
+}
+.header-searchbarfixed .logofixed{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 125px;
+	height: 58px;
+}
+.header-searchbarfixed .logofixed a{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: url(../img/header-logofixed.png) no-repeat center;
 }
 .header-hotword{
 	text-align: center;
@@ -1203,7 +1236,6 @@
 	float: left;
 	width: 100%;
 	line-height: 30px;
-	// background-color: #ccc;
 }
 .lovelife-list-smimg-box{
 	position: absolute;
