@@ -76,7 +76,7 @@
 }	
 	/*searchbarfixed*/
 .header-searchbarfixed{
-	background-color: rgba(255, 255, 255, 0.9);
+	background-color: #fff;
 	height: 58px;
 	line-height: 58px;
 	width: 100%;
@@ -521,13 +521,9 @@
 	position: relative;
 	display: block;
 	margin: 0 auto 10px;
-	-webkit-transition: transform 0.4s;
-	-o-transition: transform 0.4s;
-	transition: transform 0.4s;
-	-webkit-transform: translateY(0);
-	-ms-transform: translateY(0);
-	-o-transform: translateY(0);
-	transform: translateY(0);
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 .seckill-content-list li a p{
 	line-height: 1.3em;
@@ -620,13 +616,9 @@
 	position: relative;
 	margin-right: 10px;
 	margin-top: 30px;
-	-webkit-transition: transform 0.4s;
-	-o-transition: transform 0.4s;
-	transition: transform 0.4s;
-	-webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
-	-o-transform: translateX(0);
-	transform: translateX(0);
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 .findbrandrank-list-find-content-list span{
 	position: absolute;
@@ -656,13 +648,9 @@
 	position: relative;
 	display: block;
 	margin: 0 auto;
-	-webkit-transition: transform 0.4s;
-	-o-transition: transform 0.4s;
-	transition: transform 0.4s;
-	-webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
-	-o-transform: translateX(0);
-	transform: translateX(0);
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 .findbrandrank-list-brand-content-list li i{
 	display: block;
@@ -805,13 +793,9 @@
 	position: relative;
 	margin-left: 45px;
 	margin-top: 25px;
-	-webkit-transition: transform 0.4s;
-	-o-transition: transform 0.4s;
-	transition: transform 0.4s;
-	-webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
-	-o-transform: translateX(0);
-	transform: translateX(0);
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 .ticketcenter-right li a div{
 	position: absolute;
@@ -876,13 +860,9 @@
 }
 .enjoyquality-list li img{
 	position: relative;
-	-webkit-transition: transform 0.4s;
-	-o-transition: transform 0.4s;
-	transition: transform 0.4s;
-	-webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
-	-o-transform: translateX(0);
-	transform: translateX(0);
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 }
 .enjoyquality-list li div{
 	position: absolute;
@@ -1000,13 +980,9 @@
 	width: 600px;
 }
 .lovelife-list-content img{
-	-webkit-transition: transform 0.4s;
-	-o-transition: transform 0.4s;
-	transition: transform 0.4s;
-	-webkit-transform: translateX(0);
-	-ms-transform: translateX(0);
-	-o-transform: translateX(0);
-	transform: translateX(0);
+	-webkit-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
 	position: relative;
 }
 .lovelife-list-content-leimg{
