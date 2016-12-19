@@ -16,7 +16,7 @@ a:hover p,a:hover{
 li{
 	list-style: none;
 }
-.outerbox .arrow{
+.arrow,.lovelife-list-smimg-leftarrow,.lovelife-list-smimg-rightarrow{
 	-moz-user-select: none;
   	-webkit-user-select: none;
   	-ms-user-select: none;

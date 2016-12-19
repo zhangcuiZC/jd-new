@@ -24,7 +24,7 @@ $(function(){
 	// img lazy load
 	$(".imglazyload img").lazyload({
 		effect:"fadeIn",
-		failure_limit:15,
+		failure_limit:25,
 		data_attribute:'src',
 		placeholder:'img/imgloading.gif'
 	});
