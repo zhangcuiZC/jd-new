@@ -105,12 +105,12 @@ function slideshowFadein(thetime,thecolor){
 	}, function() {
 		$(this).css('background', 'rgba(0,0,0,0.4)');
 	});
-	//点击右箭头
+	//点击左右箭头
 	var page=1;
 	var adTimer=null;
 	$(".outerbox ul li").eq(0).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
-	$(".outerbox .rightarrow").click(function() {
-		// if (!$(".outerbox .innerbox").is(':animated')) {
+	$(".outerbox").on('click', '.arrow', function(event) {
+		if ($(event.target).hasClass('rightarrow')) {
 			if (page!=imgnum) {
 				showpic(page);
 				$(".outerbox ul li").eq(page).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
@@ -120,11 +120,9 @@ function slideshowFadein(thetime,thecolor){
 				$(".outerbox ul li").eq(0).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
 				page=1;
 			}
-		// }
-	});
-	//点击左箭头
-	$(".outerbox .leftarrow").click(function() {
-		// if (!$(".outerbox .innerbox").is(':animated')) {
+		}
+		
+		if ($(event.target).hasClass('leftarrow')) {
 			if (page!=1) {
 				showpic(page-2);
 				$(".outerbox ul li").eq(page-2).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
@@ -134,7 +132,7 @@ function slideshowFadein(thetime,thecolor){
 				$(".outerbox ul li").eq(imgnum-1).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
 				page=imgnum;
 			}
-		// }
+		}
 	});
 	//每5s自动滚动，鼠标放在div上时箭头出现，移走箭头消失
 	$(".outerbox").hover(function() {
