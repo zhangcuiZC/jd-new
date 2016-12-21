@@ -150,4 +150,18 @@ $(function(){
 		});
 	})();
 
+	(function(){
+		$(".sidebar-rightfixed li span").hide();
+		var timer=null;
+		$(".sidebar-rightfixed li").hover(function() {
+			var that=$(this);
+			timer=setTimeout(function(){
+				that.addClass('active').find("span").stop().addClass('active').animate({width:"show"}, 200);
+			},300);
+		}, function() {
+			clearTimeout(timer);
+			$(this).removeClass('active').find("span").stop().removeClass('active').animate({width:"hide"}, 200);
+		});
+	})();
+
 });

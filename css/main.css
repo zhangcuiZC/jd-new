@@ -1497,3 +1497,79 @@
 .sidebar-leftfixed .clearborder{
 	margin-top: -1px;
 }
+
+.sidebar-rightfixed{
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 100%;
+	width: 100px;
+	// background-color: #ccc;
+	z-index: 999;
+	border-right: 6px solid #7a6e6e;
+}
+.sidebar-rightfixed-topul{
+	position: absolute;
+	right: -6px;
+	top: 40%;
+}
+.sidebar-rightfixed li a{
+	display: block;
+	width: 35px;
+	height: 35px;
+}
+.sidebar-rightfixed li{
+	position: relative;
+	margin-top: 1px;
+	background-color: #7a6e6e;
+	border-radius: 2px 0 0 2px;
+}
+.sidebar-rightfixed-bottomul{
+	position: absolute;
+	right: -6px;
+	bottom: 0;
+}
+.sidebar-rightfixed span{
+	font-size: 12px;
+	color: #fff;
+	display: block;
+	position: absolute;
+	width: 65px;
+	height: 35px;
+	right: 32px;
+	line-height: 35px;
+	text-align: center;
+	top: 0;
+	background-color: #7a6e6e;
+	border-radius: 2px 0 0 2px;
+}
+.sidebar-rightfixed .active{
+	background-color: #c81623;
+}
+.sidebar-rightfixed-bottomul span{
+	width: 50px;
+}
+.sidebar-rightfixed-item1{
+	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -88px -175px;
+}
+.sidebar-rightfixed-item2{
+	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -50px 0;
+}
+.sidebar-rightfixed-item3{
+	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -50px -50px;
+}
+.sidebar-rightfixed-item4{
+	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -50px -100px;
+}
+.sidebar-rightfixed-item5{
+	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -190px -150px;
+}
+.sidebar-rightfixed-item6{
+	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -50px -150px;
+}
+.sidebar-rightfixed-item7{
+	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -50px -250px;
+}
+.sidebar-rightfixed-item8{
+	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -50px -300px;
+}
