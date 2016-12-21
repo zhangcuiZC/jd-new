@@ -150,6 +150,7 @@ $(function(){
 		});
 	})();
 
+	// right sidebar
 	(function(){
 		$(".sidebar-rightfixed li span").hide();
 		var timer=null;

@@ -1460,6 +1460,7 @@
 .footer-lists-icons-item6{
 	background: url(../img/footer-info.png) no-repeat -104px -217px;
 }
+/*left sidebar style*/
 .sidebar-leftfixed{
 	position: fixed;
 	left: 20px;
@@ -1467,9 +1468,6 @@
 	background-color: #918888;
 	display: none;
 	z-index: 999;
-}
-.sidebar-leftfixed ul{
-	/*font-size: 0;*/
 }
 .sidebar-leftfixed ul li{
 	font-size: 12px;
@@ -1497,14 +1495,15 @@
 .sidebar-leftfixed .clearborder{
 	margin-top: -1px;
 }
+/*left sidebar style end*/
 
+/*right sidebar style*/
 .sidebar-rightfixed{
 	position: fixed;
 	right: 0;
 	top: 0;
 	height: 100%;
 	width: 100px;
-	// background-color: #ccc;
 	z-index: 999;
 	border-right: 6px solid #7a6e6e;
 }
@@ -1573,3 +1572,4 @@
 .sidebar-rightfixed-item8{
 	background: url(../img/sidebar-rightfixed-icons.png) no-repeat -50px -300px;
 }
+/*right sidebar style end*/
