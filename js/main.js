@@ -1,7 +1,7 @@
 $(function(){
 	// slideshow start
 	//need slideshow-fadein.js
-	slideshowFadein(5000,"#f10215");
+	slideshow(5000,"#f10215");
 
 	// // second kill img animation
 	$(".seckill-content li:lt(5)").addClass('moveup');
