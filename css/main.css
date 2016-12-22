@@ -15,26 +15,103 @@
 	height: 30px;
 	background-color: #e3e4e5;
 	font-size: 12px;
+	border-bottom: 1px solid #ddd;
 }
 .header-shortcut-loginlist{
 	line-height: 30px;
 	float: right;
-	font-size: 0;
 }
 .header-shortcut-loginlist li{
-	display: inline-block;
-	vertical-align: middle;
+	line-height: 30px;
+	font-size: 9px;
+	position: relative;
+	float: left;
+	height: 30px;
+	color: #ccc;
 }
-.header-shortcut-loginlist li a{
+.header-shortcut-loginlist li > a{
 	font-size: 12px;
-	display: block;
-	height: 1em;
-	line-height: 1em;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
 	padding: 0 10px;
-	border-left: 1px solid #ccc;
+	vertical-align: bottom;
+	border: 1px solid #e3e4e5;
+	border-bottom: none;
 }
-.header-shortcut-loginlist li:nth-child(1) a,.header-shortcut-loginlist li:nth-child(2) a{
-	border: none;
+.header-shortcut-loginlist .dropdown > a{
+	padding-right: 18px;
+	background: url(../img/header-shortcut-arrow.bmp) no-repeat right center;
+}
+.header-shortcut-loginlist .dropdown .dropdownhovered{
+	position: relative;
+	z-index: 100;
+	border-color: #ccc;
+	background-color: #fff;
+}
+.header-shortcut-loginlist .dropdown > div{
+	position: absolute;
+	top: 29px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	z-index: 99;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);	
+	display: none;
+	line-height: 25px;
+}
+.header-shortcut-loginlist .dropdown-sitenav{
+	right: 0;
+	padding: 5px 0;
+	width: 1189px;
+}
+.header-shortcut-loginlist .dropdown-sitenav table{
+	float: left;
+	font-size: 12px;
+	height: 170px;
+	width: 325px;
+	border-right: 1px solid #e7e7e7;
+	margin-left: 15px;
+	border-collapse: collapse;
+}
+.header-shortcut-loginlist .dropdown-sitenav .item2,.header-shortcut-loginlist .dropdown-sitenav .item3{
+	width: 265px;
+}
+.header-shortcut-loginlist .dropdown-sitenav .item4{
+	border:none;
+	width: 265px;
+}
+.header-shortcut-loginlist .dropdown-client{
+	right: 0;
+	padding: 5px 15px;
+}
+.header-shortcut-loginlist .dropdown-client table{
+	font-size: 12px;
+	width: 135px;
+}
+.header-shortcut-loginlist .dropdown-client .item1{
+	border-bottom: 1px dotted #e7e7e7;
+}
+.header-shortcut-loginlist .dropdown-client td{
+	width: 65px;
+	text-align: left;
+}
+.header-shortcut-loginlist .dropdown-client td:nth-child(2){
+	text-align: right;
+}
+.header-shortcut-loginlist .dropdown-myjd{
+	left: 0;
+	padding: 5px 15px;
+}
+.header-shortcut-loginlist .dropdown-myjd .item1{
+	border-bottom: 1px dotted #e7e7e7;
+}
+.header-shortcut-loginlist .dropdown-myjd table{
+	font-size: 12px;
+	width: 220px;
+}
+.header-shortcut-loginlist .dropdown-myjd td{
+	width: 110px;
+	text-align: left;
 }
 .header-searchbar{
 	text-align: center;
@@ -1503,7 +1580,6 @@
 	right: 0;
 	top: 0;
 	height: 100%;
-	width: 100px;
 	z-index: 999;
 	border-right: 6px solid #7a6e6e;
 }

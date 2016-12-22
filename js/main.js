@@ -63,7 +63,7 @@ $(function(){
 	detaillist.hover(function() {
 		clearTimeout(divhide);
 		listidx=detaillist.index(this);
-		detailurl="detailclass/detailclass-"+(listidx+1)+".html";
+		detailurl="loadtable/detailclass-"+(listidx+1)+".html";
 		detailclass="mainpage-class-detail"+(listidx+1);
 		detaildivlist.eq(listidx).show().siblings('.mainpage-class-detail').hide();
 		content=detaildivlist.eq(listidx).text();
@@ -162,6 +162,18 @@ $(function(){
 		}, function() {
 			clearTimeout(timer);
 			$(this).removeClass('active').find("span").stop().removeClass('active').animate({width:"hide"}, 200);
+		});
+	})();
+
+	//show dropdown content
+	(function(){
+		$(".dropdown").hover(function() {
+			$(this).children('a').addClass('dropdownhovered').siblings('div').show();
+			if($(this).children('div').text()==""){
+				$(this).children('div').load("loadtable/sitenav.html");
+			}
+		}, function() {
+			$(this).children("a").removeClass('dropdownhovered').siblings('div').hide();
 		});
 	})();
 
