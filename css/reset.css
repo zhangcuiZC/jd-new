@@ -21,3 +21,7 @@ li{
   	-webkit-user-select: none;
   	-ms-user-select: none;
 }
+/*compatible in IE10*/
+img{
+	border: none;
+}
