@@ -94,6 +94,7 @@ $(function(){
 	(function(){
 		var nolock=true;
 		var nolockleft=true;
+		var changebgtimer=null;
 		$(window).scroll(function() {
 			//header-searchbarfixed
 			if($(".seckill").offset().top-$(window).scrollTop()<=0){
@@ -106,10 +107,10 @@ $(function(){
 				nolock=true;
 			}
 			//sidebar-leftfixed
-			if($(".enjoyquality").offset().top-$(window).scrollTop()<=0.5*$(window).height()){
-				$(".sidebar-leftfixed .toenjoyquality").addClass('active').siblings('li').removeClass('active');
+			if($(".showsidebarleft").offset().top-$(window).scrollTop()<=0.5*$(window).height()){
 				if (nolockleft) {
 					$(".sidebar-leftfixed").stop(true,true).fadeIn().css('left', 0.5*$(window).width()-660);
+					$(".sidebar-leftfixed .toenjoyquality").addClass('active').siblings('li').removeClass('active');
 				}
 				nolockleft=false;
 			}else{
@@ -118,13 +119,19 @@ $(function(){
 				});
 				nolockleft=true;
 			}
-			//change sidebarfixed bgc when srcoll
+
+			//change sidebarfixed bgc when srcoll,use function throttle
 			$(".sidebarpointer").each(function() {
-				if ($(this).offset().top-$(window).scrollTop()<=0.5*$(window).height()) {
-					var classname=".to"+$(this).attr("data-class");
-					$(classname).addClass('active').siblings('li').removeClass("active");
+				var pointer=$(this);
+				if (pointer.offset().top-$(window).scrollTop()<=0.5*$(window).height()) {
+					clearTimeout(changebgtimer);
+					changebgtimer=setTimeout(function(){
+						var classname=".to"+pointer.attr("data-class");
+						$(classname).addClass('active').siblings('li').removeClass("active");
+					},300);
 				}
 			});
+
 		});
 
 		//trigger
@@ -132,7 +139,6 @@ $(function(){
 		$(window).resize(function() {
 			$(".sidebar-leftfixed").css('left', 0.5*$(window).width()-660);
 		});
-
 	})();
 
 	//change bgc and scroll when click sidebar 
