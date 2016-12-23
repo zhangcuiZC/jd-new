@@ -195,7 +195,7 @@ body{
 }
 
 /*img move style start*/
-.moveup:hover img{
+.supporttranstion .moveup:hover img{
 	-webkit-transition: transform 0.4s;
 	-o-transition: transform 0.4s;
 	transition: transform 0.4s;
@@ -204,7 +204,7 @@ body{
 	-o-transform: translateY(-5px);
 	transform: translateY(-5px);
 }
-.moveleft:hover img{
+.supporttranstion .moveleft:hover img{
 	-webkit-transition: transform 0.4s;
 	-o-transition: transform 0.4s;
 	transition: transform 0.4s;
@@ -213,7 +213,7 @@ body{
 	-o-transform: translateX(-10px);
 	transform: translateX(-10px);
 }
-.moveright:hover img{
+.supporttranstion .moveright:hover img{
 	-webkit-transition: transform 0.4s;
 	-o-transition: transform 0.4s;
 	transition: transform 0.4s;

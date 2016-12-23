@@ -506,6 +506,7 @@
 .seckill-title{
 	height: 55px;
 	line-height: 52px;
+	background-color: #e01222;
 	background: -webkit-linear-gradient(left, #e01222, #d00414);
 	background: -o-linear-gradient(left, #e01222, #d00414);
 	background: linear-gradient(to right, #e01222, #d00414);
@@ -638,16 +639,19 @@
 	padding-right: 30px;
 }
 .findbrandrank-list-find-title{
+	background-color: #4998a1;
 	background: -webkit-linear-gradient(left, #4998a1, #2e828b);
 	background: -o-linear-gradient(left, #4998a1, #2e828b);
 	background: linear-gradient(to right, #4998a1, #2e828b);
 }
 .findbrandrank-list-brand-title{
+	background-color: #7d2e5c;
 	background: -webkit-linear-gradient(left, #7d2e5c, #6f184a);
 	background: -o-linear-gradient(left, #7d2e5c, #6f184a);
 	background: linear-gradient(to right, #7d2e5c, #6f184a);
 }
 .findbrandrank-list-rank-title{
+	background-color: #e77005;
 	background: -webkit-linear-gradient(left, #e77005, #e45d04);
 	background: -o-linear-gradient(left, #e77005, #e45d04);
 	background: linear-gradient(to right, #e77005, #e45d04);
@@ -1138,6 +1142,7 @@
 	/*lovelife common content style end*/
 	/*lovelife special title backgroundcolor start*/
 .lovelife-list-item1 .lovelife-list-title{
+	background-color: #974676;
 	background: -webkit-linear-gradient(left, #974676, #9e4075);
 	background: -o-linear-gradient(left, #974676, #9e4075);
 	background: linear-gradient(to right, #974676, #9e4075);
@@ -1146,6 +1151,7 @@
 	color: #9e4075;
 }
 .lovelife-list-item2 .lovelife-list-title{
+	background-color: #cd375e;
 	background: -webkit-linear-gradient(left, #cd375e, #c1314d);
 	background: -o-linear-gradient(left, #cd375e, #c1314d);
 	background: linear-gradient(to right, #cd375e, #c1314d);
@@ -1154,6 +1160,7 @@
 	color: #c1314d;
 }
 .lovelife-list-item3 .lovelife-list-title{
+	background-color: #78538e;
 	background: -webkit-linear-gradient(left, #78538e, #674083);
 	background: -o-linear-gradient(left, #78538e, #674083);
 	background: linear-gradient(to right, #78538e, #674083);
@@ -1162,6 +1169,7 @@
 	color: #674083;
 }
 .lovelife-list-item4 .lovelife-list-title{
+	background-color: #5e6c90;
 	background: -webkit-linear-gradient(left, #5e6c90, #4c5e8c);
 	background: -o-linear-gradient(left, #5e6c90, #4c5e8c);
 	background: linear-gradient(to right, #5e6c90, #4c5e8c);
@@ -1170,6 +1178,7 @@
 	color: #4c5e8c;
 }
 .lovelife-list-item5 .lovelife-list-title{
+	background-color: #488bad;
 	background: -webkit-linear-gradient(left, #488bad, #337e8d);
 	background: -o-linear-gradient(left, #488bad, #337e8d);
 	background: linear-gradient(to right, #488bad, #337e8d);
@@ -1178,6 +1187,7 @@
 	color: #337e8d;
 }
 .lovelife-list-item6 .lovelife-list-title{
+	background-color: #3aaba9;
 	background: -webkit-linear-gradient(left, #3aaba9, #299b9a);
 	background: -o-linear-gradient(left, #3aaba9, #299b9a);
 	background: linear-gradient(to right, #3aaba9, #299b9a);
@@ -1186,6 +1196,7 @@
 	color: #299b9a;
 }
 .lovelife-list-item7 .lovelife-list-title{
+	background-color: #568e7d;
 	background: -webkit-linear-gradient(left, #568e7d, #447e6c);
 	background: -o-linear-gradient(left, #568e7d, #447e6c);
 	background: linear-gradient(to right, #568e7d, #447e6c);
@@ -1194,6 +1205,7 @@
 	color: #447e6c;
 }
 .lovelife-list-item8 .lovelife-list-title{
+	background-color: #eeb924;
 	background: -webkit-linear-gradient(left, #eeb924, #e49433);
 	background: -o-linear-gradient(left, #eeb924, #e49433);
 	background: linear-gradient(to right, #eeb924, #e49433);
@@ -1202,6 +1214,7 @@
 	color: #e49433;
 }
 .lovelife-list-item9 .lovelife-list-title{
+	background-color: #e16c46;
 	background: -webkit-linear-gradient(left, #e16c46, #e85629);
 	background: -o-linear-gradient(left, #e16c46, #e85629);
 	background: linear-gradient(to right, #e16c46, #e85629);
@@ -1210,6 +1223,7 @@
 	color: #e85629;
 }
 .lovelife-list-item10 .lovelife-list-title{
+	background-color: #a56741;
 	background: -webkit-linear-gradient(left, #a56741, #925937);
 	background: -o-linear-gradient(left, #a56741, #925937);
 	background: linear-gradient(to right, #a56741, #925937);
@@ -1218,6 +1232,7 @@
 	color: #925937;
 }
 .lovelife-list-item11 .lovelife-list-title{
+	background-color: #756059;
 	background: -webkit-linear-gradient(left, #756059, #684c44);
 	background: -o-linear-gradient(left, #756059, #684c44);
 	background: linear-gradient(to right, #756059, #684c44);
@@ -1226,6 +1241,7 @@
 	color: #684c44;
 }
 .lovelife-list-item12 .lovelife-list-title{
+	background-color: #865454;
 	background: -webkit-linear-gradient(left, #865454, #7e3b3c);
 	background: -o-linear-gradient(left, #865454, #7e3b3c);
 	background: linear-gradient(to right, #865454, #7e3b3c);
@@ -1234,6 +1250,7 @@
 	color: #7e3b3c;
 }
 .lovelife-list-item13 .lovelife-list-title{
+	background-color: #6467a0;
 	background: -webkit-linear-gradient(left, #6467a0, #544b8f);
 	background: -o-linear-gradient(left, #6467a0, #544b8f);
 	background: linear-gradient(to right, #6467a0, #544b8f);
@@ -1242,6 +1259,7 @@
 	color: #544b8f;
 }
 .lovelife-list-item14 .lovelife-list-title{
+	background-color: #5981a3;
 	background: -webkit-linear-gradient(left, #5981a3, #41698b);
 	background: -o-linear-gradient(left, #5981a3, #41698b);
 	background: linear-gradient(to right, #5981a3, #41698b);
@@ -1250,6 +1268,7 @@
 	color: #41698b;
 }
 .lovelife-list-item15 .lovelife-list-title{
+	background-color: #5a7259;
 	background: -webkit-linear-gradient(left, #5a7259, #425f41);
 	background: -o-linear-gradient(left, #5a7259, #425f41);
 	background: linear-gradient(to right, #5a7259, #425f41);

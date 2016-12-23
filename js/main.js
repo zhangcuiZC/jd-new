@@ -1,4 +1,18 @@
 $(function(){
+	// jQuery.support.transition
+	// to verify that CSS3 transition is supported (or any of its browser-specific implementations)
+	$.support.transition = (function(){ 
+	    var thisBody = document.body || document.documentElement,
+	    thisStyle = thisBody.style,
+	    support = thisStyle.transition !== undefined || thisStyle.WebkitTransition !== undefined || thisStyle.MozTransition !== undefined || thisStyle.MsTransition !== undefined || thisStyle.OTransition !== undefined;
+	                   
+	    return support; 
+	})();
+	var issupporttranstion=$.support.transition;
+	if(issupporttranstion){
+		$("html").addClass('supporttranstion');
+	}
+
 	// slideshow start
 	//need slideshow-fadein.js
 	slideshow(5000,"#f10215");
@@ -56,31 +70,31 @@ $(function(){
 
 	//detail class
 	(function(){
-	var detaillist=$(".mainpage-class-list li");
-	var detaildivlist=$(".mainpage-class-detail");
-	var listidx,divhide,htmlobj,detailurl,detailclass,content;
-	detaillist.hover(function() {
-		clearTimeout(divhide);
-		listidx=detaillist.index(this);
-		detailurl="loadtable/detailclass-"+(listidx+1)+".html";
-		detailclass="mainpage-class-detail"+(listidx+1);
-		detaildivlist.eq(listidx).show().siblings('.mainpage-class-detail').hide();
-		content=detaildivlist.eq(listidx).text();
-		if (content=="") {
-			detaildivlist.eq(listidx).load(detailurl);
-		}
-	}, function() {
-		divhide=setTimeout(function(){
-			detaildivlist.eq(listidx).hide();
-		},100);
-	});
+		var detaillist=$(".mainpage-class-list li");
+		var detaildivlist=$(".mainpage-class-detail");
+		var listidx,divhide,htmlobj,detailurl,detailclass,content;
+		detaillist.hover(function() {
+			clearTimeout(divhide);
+			listidx=detaillist.index(this);
+			detailurl="loadtable/detailclass-"+(listidx+1)+".html";
+			detailclass="mainpage-class-detail"+(listidx+1);
+			detaildivlist.eq(listidx).show().siblings('.mainpage-class-detail').hide();
+			content=detaildivlist.eq(listidx).text();
+			if (content=="") {
+				detaildivlist.eq(listidx).load(detailurl);
+			}
+		}, function() {
+			divhide=setTimeout(function(){
+				detaildivlist.eq(listidx).hide();
+			},100);
+		});
 
-	detaildivlist.hover(function() {
-		clearTimeout(divhide);
-		detaildivlist.eq(listidx).show();
-	}, function() {
-		detaildivlist.hide();
-	});
+		detaildivlist.hover(function() {
+			clearTimeout(divhide);
+			detaildivlist.eq(listidx).show();
+		}, function() {
+			detaildivlist.hide();
+		});
 	})();
 
 	//small img slide
