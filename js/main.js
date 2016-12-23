@@ -25,8 +25,7 @@ $(function(){
 	$(".imglazyload img").lazyload({
 		effect:"fadeIn",
 		failure_limit:25,
-		data_attribute:'src',
-		placeholder:'img/imgloading.gif'
+		data_attribute:'src'
 	});
 
 	// rank tab
