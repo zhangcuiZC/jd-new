@@ -30,17 +30,17 @@ $(function(){
 	$(".ticketcenter-right li").addClass('moveright');
 
 	// // enjoy quality animation
-	$(".enjoyquality-list li").addClass('moveleft');
+	// $(".enjoyquality-list li").addClass('moveleft');
 
 	// // love life animation
-	$(".lovelife-list-content a").addClass('moveleft');
+	// $(".lovelife-list-content a").addClass('moveleft');
 
 	// img lazy load
-	$(".imglazyload img").lazyload({
-		effect:"fadeIn",
-		failure_limit:25,
-		data_attribute:'src'
-	});
+	// $(".imglazyload img").lazyload({
+	// 	effect:"show",
+	// 	failure_limit:25,
+	// 	data_attribute:'src'
+	// });
 
 	// rank tab
 	(function(){
@@ -144,6 +144,131 @@ $(function(){
 					},300);
 				}
 			});
+
+			if ($(".enjoyquality").offset().top-$(window).scrollTop()<=$(window).height() && $(".enjoyquality").text()=="") {
+				var fileurl="loadtable/enjoyquality.html";
+				$(".enjoyquality").load(fileurl,function(){
+					$(this).find('img').addClass('moveleft');
+				});
+			}
+			if ($(".loveshopping").offset().top-$(window).scrollTop()<=$(window).height()) {
+				if ($(".loveshopping").text()=="") {
+					var fileurl="loadtable/loveshopping.html";
+					$(".loveshopping").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+				if ($(".lovebeauty").text()=="") {
+					var fileurl="loadtable/lovebeauty.html";
+					$(".lovebeauty").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+			}
+			if ($(".homeapp").offset().top-$(window).scrollTop()<=$(window).height()) {
+				if ($(".homeapp").text()=="") {
+					var fileurl="loadtable/homeapp.html";
+					$(".homeapp").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+				if ($(".phone").text()=="") {
+					var fileurl="loadtable/phone.html";
+					$(".phone").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+			}
+			if ($(".computer").offset().top-$(window).scrollTop()<=$(window).height() && $(".computer").text()=="") {
+				var fileurl="loadtable/computer.html";
+				$(".computer").load(fileurl,function(){
+					$(this).find('.lovelife-list-content img').addClass('moveleft');
+					$(this).find('.lovelife-list-smimg').smimgslide();
+				});
+			}
+			if ($(".play3c").offset().top-$(window).scrollTop()<=$(window).height()) {
+				if ($(".play3c").text()=="") {
+					var fileurl="loadtable/play3c.html";
+					$(".play3c").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+				if ($(".lovesport").text()=="") {
+					var fileurl="loadtable/lovesport.html";
+					$(".lovesport").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+			}
+			if ($(".loveeat").offset().top-$(window).scrollTop()<=$(window).height() && $(".loveeat").text()=="") {
+				var fileurl="loadtable/loveeat.html";
+				$(".loveeat").load(fileurl,function(){
+					$(this).find('.lovelife-list-content img').addClass('moveleft');
+					$(this).find('.lovelife-list-smimg').smimgslide();
+				});
+			}
+			if ($(".lovebaby").offset().top-$(window).scrollTop()<=$(window).height()) {
+				if ($(".lovebaby").text()=="") {
+					var fileurl="loadtable/lovebaby.html";
+					$(".lovebaby").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+				if ($(".lovehome").text()=="") {
+					var fileurl="loadtable/lovehome.html";
+					$(".lovehome").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+			}
+			if ($(".loveread").offset().top-$(window).scrollTop()<=$(window).height()) {
+				if ($(".loveread").text()=="") {
+					var fileurl="loadtable/loveread.html";
+					$(".loveread").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+				if ($(".lovecar").text()=="") {
+					var fileurl="loadtable/lovecar.html";
+					$(".lovecar").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+			}
+			if ($(".lovegame").offset().top-$(window).scrollTop()<=$(window).height()) {
+				if ($(".lovegame").text()=="") {
+					var fileurl="loadtable/lovegame.html";
+					$(".lovegame").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+				if ($(".lifetrip").text()=="") {
+					var fileurl="loadtable/lifetrip.html";
+					$(".lifetrip").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+				if ($(".jdfinance").text()=="") {
+					var fileurl="loadtable/jdfinance.html";
+					$(".jdfinance").load(fileurl,function(){
+						$(this).find('.lovelife-list-content img').addClass('moveleft');
+						$(this).find('.lovelife-list-smimg').smimgslide();
+					});
+				}
+			}
+
 
 		});
 

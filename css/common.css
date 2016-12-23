@@ -204,7 +204,7 @@ body{
 	-o-transform: translateY(-5px);
 	transform: translateY(-5px);
 }
-.supporttranstion .moveleft:hover img{
+.supporttranstion .moveleft:hover{
 	-webkit-transition: transform 0.4s;
 	-o-transition: transform 0.4s;
 	transition: transform 0.4s;
