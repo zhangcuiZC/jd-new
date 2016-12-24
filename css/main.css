@@ -113,6 +113,9 @@
 	width: 110px;
 	text-align: left;
 }
+.header-shortcut-loginlist table th{
+	text-align: left;
+}
 .header-searchbar{
 	text-align: center;
 	padding-top: 25px;
