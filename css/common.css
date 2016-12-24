@@ -125,6 +125,7 @@ body{
 }
 .hotsale{
 	font-size: 12px !important;
+	background-color: #fb9106;
 	background: -webkit-linear-gradient(top, #f6c70c, #fb9106);
 	background: -o-linear-gradient(top, #f6c70c, #fb9106);
 	background: linear-gradient(to bottom, #f6c70c, #fb9106);
@@ -133,6 +134,7 @@ body{
 	border-top: 10px solid #fb9106;
 }
 .rank1{
+	background-color: #d00414;
 	background: -webkit-linear-gradient(#e01222, #d00414);
 	background: -o-linear-gradient(#e01222, #d00414);
 	background: linear-gradient(#e01222, #d00414);
@@ -141,6 +143,7 @@ body{
 	border-top: 10px solid #d00414;
 }
 .rank2{
+	background-color: #f47f36;
 	background: -webkit-linear-gradient(#f59104, #f47f36);
 	background: -o-linear-gradient(#f59104, #f47f36);
 	background: linear-gradient(#f59104, #f47f36);
@@ -149,6 +152,7 @@ body{
 	border-top: 10px solid #f47f36;
 }
 .rank3{
+	background-color: #f8b913;
 	background: -webkit-linear-gradient(#f9cb15, #f8b913);
 	background: -o-linear-gradient(#f9cb15, #f8b913);
 	background: linear-gradient(#f9cb15, #f8b913);
