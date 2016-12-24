@@ -737,7 +737,6 @@
 	display: block;
 	width: 20px;
 	height: 3px;
-	margin: 20px 0 5px;
 	background-color: #6f184a;
 }
 .findbrandrank-list-brand-content-list li h4{
@@ -746,6 +745,7 @@
 .findbrandrank-list-brand-content-list li p{
 	font-size: 12px;
 	line-height: 20px;
+	padding-bottom: 20px;
 }
 .findbrandrank-list-rank-nav{
 	font-size: 14px;

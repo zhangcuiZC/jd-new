@@ -204,7 +204,7 @@ body{
 	-o-transform: translateY(-5px);
 	transform: translateY(-5px);
 }
-.supporttranstion .moveleft:hover{
+.supporttranstion .moveleft:hover img{
 	-webkit-transition: transform 0.4s;
 	-o-transition: transform 0.4s;
 	transition: transform 0.4s;
@@ -223,3 +223,8 @@ body{
 	transform: translateX(12px);
 }
 /*img move style end*/
+.lazyload-placeholder{
+	display: block;
+	width: 100px;
+	margin: 100px auto;
+}
