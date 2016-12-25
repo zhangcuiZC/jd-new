@@ -72,7 +72,7 @@ $(function(){
 			detaildivlist.eq(listidx).show().siblings('.mainpage-class-detail').hide();
 			//使用AJAX的load方法加载
 			content=detaildivlist.eq(listidx).text();
-			if (content=="") {
+			if (content==="") {
 				detaildivlist.eq(listidx).load(detailurl);
 			}
 		}, function() {
@@ -138,11 +138,12 @@ $(function(){
 
 			//各个内容区延时加载，只有在鼠标滚动到响应的位置时才加载内容
 			//采用两个定时器，快速滚动时只加载相邻的两个内容区，尽量减少不必要的加载
-			if ($(".enjoyquality").offset().top-$(window).scrollTop()>=-600 && $(".enjoyquality").offset().top-$(window).scrollTop()<=$(window).height() && $(".enjoyquality").text()=="") {
+			var fileurl="";
+			if ($(".enjoyquality").offset().top-$(window).scrollTop()>=-600 && $(".enjoyquality").offset().top-$(window).scrollTop()<=$(window).height() && $(".enjoyquality").text()==="") {
 				//加载享品质及下方的广告
 				clearTimeout(loadtimer1);
 				loadtimer1=setTimeout(function(){
-					var fileurl="loadtable/enjoyquality.html";
+					fileurl="loadtable/enjoyquality.html";
 					$(".enjoyquality").load(fileurl,function(){
 						$(this).find('li').addClass('moveleft');
 					});
@@ -158,8 +159,8 @@ $(function(){
 				//加载爱逛和爱美丽两个区块
 				clearTimeout(loadtimer2);
 				loadtimer2=setTimeout(function(){
-					if ($(".loveshopping").text()=="") {
-						var fileurl="loadtable/loveshopping.html";
+					if ($(".loveshopping").text()==="") {
+						fileurl="loadtable/loveshopping.html";
 						$(".loveshopping").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							//区块下方的商标滚动区
@@ -167,8 +168,8 @@ $(function(){
 							$(this).find('.lovelife-list-smimg').smimgslide();
 						});
 					}
-					if ($(".lovebeauty").text()=="") {
-						var fileurl="loadtable/lovebeauty.html";
+					if ($(".lovebeauty").text()==="") {
+						fileurl="loadtable/lovebeauty.html";
 						$(".lovebeauty").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
@@ -180,15 +181,15 @@ $(function(){
 				//加载家电馆和搞机派两个区块
 				clearTimeout(loadtimer1);
 				loadtimer1=setTimeout(function(){
-					if ($(".homeapp").text()=="") {
-						var fileurl="loadtable/homeapp.html";
+					if ($(".homeapp").text()==="") {
+						fileurl="loadtable/homeapp.html";
 						$(".homeapp").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
 						});
 					}
-					if ($(".phone").text()=="") {
-						var fileurl="loadtable/phone.html";
+					if ($(".phone").text()==="") {
+						fileurl="loadtable/phone.html";
 						$(".phone").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
@@ -196,11 +197,11 @@ $(function(){
 					}
 				},200);
 			}
-			if ($(".computer").offset().top-$(window).scrollTop()>=-600 && $(".computer").offset().top-$(window).scrollTop()<=$(window).height() && $(".computer").text()=="") {
+			if ($(".computer").offset().top-$(window).scrollTop()>=-600 && $(".computer").offset().top-$(window).scrollTop()<=$(window).height() && $(".computer").text()==="") {
 				//加载电脑数码区块
 				clearTimeout(loadtimer2);
 				loadtimer2=setTimeout(function(){
-					var fileurl="loadtable/computer.html";
+					fileurl="loadtable/computer.html";
 					$(".computer").load(fileurl,function(){
 						$(this).find('.lovelife-list-content a').addClass('moveleft');
 						$(this).find('.lovelife-list-smimg').smimgslide();
@@ -211,15 +212,15 @@ $(function(){
 				//加载玩3C和爱运动区块及下方广告
 				clearTimeout(loadtimer1);
 				loadtimer1=setTimeout(function(){	
-					if ($(".play3c").text()=="") {
-						var fileurl="loadtable/play3c.html";
+					if ($(".play3c").text()==="") {
+						fileurl="loadtable/play3c.html";
 						$(".play3c").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
 						});
 					}
-					if ($(".lovesport").text()=="") {
-						var fileurl="loadtable/lovesport.html";
+					if ($(".lovesport").text()==="") {
+						fileurl="loadtable/lovesport.html";
 						$(".lovesport").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
@@ -233,11 +234,11 @@ $(function(){
 					}
 				},200);
 			}
-			if ($(".loveeat").offset().top-$(window).scrollTop()>=-600 && $(".loveeat").offset().top-$(window).scrollTop()<=$(window).height() && $(".loveeat").text()=="") {
+			if ($(".loveeat").offset().top-$(window).scrollTop()>=-600 && $(".loveeat").offset().top-$(window).scrollTop()<=$(window).height() && $(".loveeat").text()==="") {
 				//加载爱吃区块
 				clearTimeout(loadtimer2);
 				loadtimer2=setTimeout(function(){
-					var fileurl="loadtable/loveeat.html";
+					fileurl="loadtable/loveeat.html";
 					$(".loveeat").load(fileurl,function(){
 						$(this).find('.lovelife-list-content a').addClass('moveleft');
 						$(this).find('.lovelife-list-smimg').smimgslide();
@@ -248,15 +249,15 @@ $(function(){
 				//加载爱宝宝爱家两个区块
 				clearTimeout(loadtimer1);
 				loadtimer1=setTimeout(function(){
-					if ($(".lovebaby").text()=="") {
-						var fileurl="loadtable/lovebaby.html";
+					if ($(".lovebaby").text()==="") {
+						fileurl="loadtable/lovebaby.html";
 						$(".lovebaby").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
 						});
 					}
-					if ($(".lovehome").text()=="") {
-						var fileurl="loadtable/lovehome.html";
+					if ($(".lovehome").text()==="") {
+						fileurl="loadtable/lovehome.html";
 						$(".lovehome").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
@@ -268,15 +269,15 @@ $(function(){
 				//加载爱阅读爱车两个区块
 				clearTimeout(loadtimer2);
 				loadtimer2=setTimeout(function(){
-					if ($(".loveread").text()=="") {
-						var fileurl="loadtable/loveread.html";
+					if ($(".loveread").text()==="") {
+						fileurl="loadtable/loveread.html";
 						$(".loveread").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
 						});
 					}
-					if ($(".lovecar").text()=="") {
-						var fileurl="loadtable/lovecar.html";
+					if ($(".lovecar").text()==="") {
+						fileurl="loadtable/lovecar.html";
 						$(".lovecar").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
@@ -288,22 +289,22 @@ $(function(){
 				//加载爱游戏生活旅行京东金融三个区块及下方广告
 				clearTimeout(loadtimer1);
 				loadtimer1=setTimeout(function(){
-					if ($(".lovegame").text()=="") {
-						var fileurl="loadtable/lovegame.html";
+					if ($(".lovegame").text()==="") {
+						fileurl="loadtable/lovegame.html";
 						$(".lovegame").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
 						});
 					}
-					if ($(".lifetrip").text()=="") {
-						var fileurl="loadtable/lifetrip.html";
+					if ($(".lifetrip").text()==="") {
+						fileurl="loadtable/lifetrip.html";
 						$(".lifetrip").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
 						});
 					}
-					if ($(".jdfinance").text()=="") {
-						var fileurl="loadtable/jdfinance.html";
+					if ($(".jdfinance").text()==="") {
+						fileurl="loadtable/jdfinance.html";
 						$(".jdfinance").load(fileurl,function(){
 							$(this).find('.lovelife-list-content a').addClass('moveleft');
 							$(this).find('.lovelife-list-smimg').smimgslide();
@@ -364,7 +365,7 @@ $(function(){
 	(function(){
 		$(".dropdown").hover(function() {
 			$(this).children('a').addClass('dropdownhovered').siblings('div').show();
-			if($(this).children('div').text()==""){
+			if($(this).children('div').text()===""){
 				$(this).children('div').load("loadtable/sitenav.html");
 			}
 		}, function() {
@@ -380,7 +381,7 @@ $(function(){
 			$(".seckill-title-right-second").html(event.strftime('%S'));
 		}).on('finish.countdown', function(event) {
 			//倒计时结束
-			$(this).html("此次秒杀活动已结束，请等待下次活动开始。")
+			$(this).html("此次秒杀活动已结束，请等待下次活动开始。");
 		});
 	})();
 });

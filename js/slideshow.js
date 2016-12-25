@@ -10,13 +10,14 @@ function slideshow(thetime,thecolor){
 		return false;
 	}
 
+	var i;
 	var adTimer=null;
 	var innerbox=$(".outerbox .innerbox");
 	var imgnum=$(".outerbox img").length;
 	var imgwidth=$(".outerbox").width();
 	var imgheight=$(".outerbox").height();
 	//给每个图片设置data-idx属性标识它们，使其能够和infobox相对应
-	for(var i=0;i<imgnum;i++){
+	for(i=0;i<imgnum;i++){
 		$(".outerbox .innerbox img").eq(i).attr('data-idx', i);
 	}
 	//设置各个div的css样式
@@ -44,7 +45,7 @@ function slideshow(thetime,thecolor){
 	var liheight=$(".outerbox .infobox").height();
 
 	var lists="";
-	for(var i=0;i<imgnum;i++){
+	for(i=0;i<imgnum;i++){
 		lists+="<li><a href=''><span></span></a></li>";
 	}
 	var ullists="<ul>"+lists+"</ul>";
@@ -83,7 +84,7 @@ function slideshow(thetime,thecolor){
 		overflow:'hidden'
 	});
 	//获得img上层a的href属性，赋给infobox里的a元素
-	for(var i=0;i<imgnum;i++){
+	for(i=0;i<imgnum;i++){
 		var link=$(".outerbox .innerbox a").eq(i).attr("href");
 		var info=$(".outerbox .innerbox img").eq(i).attr("alt");
 		$(".outerbox .infobox a").eq(i).attr('href', link);
@@ -122,11 +123,12 @@ function slideshow(thetime,thecolor){
 		$(this).css('background', 'rgba(0,0,0,0.4)');
 	});
 	//点击左右箭头
+	var dataidx;
 	$(".outerbox ul li").eq(0).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
 	$(".outerbox").on('click', '.arrow', function(event) {
 		if ($(event.target).hasClass('rightarrow')) {
 			if (!innerbox.is(':animated')) {
-				var dataidx=$(".outerbox .innerbox a:first").next("a").find('img').attr("data-idx");
+				dataidx=$(".outerbox .innerbox a:first").next("a").find('img').attr("data-idx");
 				$(".outerbox ul li").eq(dataidx).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
 				innerbox.animate({left:-imgwidth}, "normal",function(){
 					$(".outerbox .innerbox a:first").insertAfter($(".outerbox .innerbox a:last"));
@@ -140,7 +142,7 @@ function slideshow(thetime,thecolor){
 				$(".outerbox .innerbox a:last").insertBefore($(".outerbox .innerbox a:first"));
 				innerbox.css('left', -imgwidth);
 				innerbox.animate({left:0}, "normal");
-				var dataidx=$(".outerbox .innerbox a:first").find('img').attr("data-idx");
+				dataidx=$(".outerbox .innerbox a:first").find('img').attr("data-idx");
 				$(".outerbox ul li").eq(dataidx).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
 			}
 		}
@@ -171,11 +173,11 @@ function slideshow(thetime,thecolor){
 		var dataidx=$(".outerbox .innerbox a:first").find('img').attr("data-idx");
 		$(".outerbox ul li").eq(index).css('backgroundColor', color).siblings().css('background', 'rgba(0,0,0,0.4)');
 		if(index-dataidx>0){
-			for(var i=0;i<Math.abs(index-dataidx);i++){
+			for(i=0;i<Math.abs(index-dataidx);i++){
 					$(".outerbox .innerbox a:first").insertAfter($(".outerbox .innerbox a:last"));
 			}
 		}else if(index-dataidx<0){
-			for(var i=0;i<Math.abs(index-dataidx);i++){
+			for(i=0;i<Math.abs(index-dataidx);i++){
 					$(".outerbox .innerbox a:last").insertBefore($(".outerbox .innerbox a:first"));
 			}
 		}
