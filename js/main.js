@@ -372,4 +372,15 @@ $(function(){
 		});
 	})();
 
+	//京东秒杀部分的倒计时
+	(function(){
+		$(".seckill-title-right").countdown('2020/12/25 18:53:00').on('update.countdown', function(event) {
+			$(".seckill-title-right-hour").html(event.strftime('%H'));
+			$(".seckill-title-right-minute").html(event.strftime('%M'));
+			$(".seckill-title-right-second").html(event.strftime('%S'));
+		}).on('finish.countdown', function(event) {
+			//倒计时结束
+			$(this).html("此次秒杀活动已结束，请等待下次活动开始。")
+		});
+	})();
 });
