@@ -363,13 +363,28 @@ $(function(){
 
 	//页面顶部的下拉菜单栏效果
 	(function(){
-		$(".dropdown").hover(function() {
+		//右侧下拉菜单栏
+		$(".header-shortcut-loginlist .dropdown").hover(function() {
 			$(this).children('a').addClass('dropdownhovered').siblings('div').show();
 			if($(this).children('div').text()===""){
 				$(this).children('div').load("loadtable/sitenav.html");
 			}
 		}, function() {
 			$(this).children("a").removeClass('dropdownhovered').siblings('div').hide();
+		});
+		//左侧城市选择
+		$(".header-shortcut-city").hover(function() {
+			var that=$(this);
+			that.children('span').addClass('dropdownhovered').siblings('div').show().click(function(event) {
+				var target=$(event.target);
+				if (event.target.tagName==="A" || event.target.tagName==="a") {
+					that.find('a').removeClass('active');
+					target.addClass('active');
+					that.children('span').text(target.text());
+				}
+			});
+		}, function() {
+			$(this).children('span').removeClass('dropdownhovered').siblings('div').hide();
 		});
 	})();
 
@@ -384,4 +399,25 @@ $(function(){
 			$(this).html("此次秒杀活动已结束，请等待下次活动开始。");
 		});
 	})();
+
+	//mainpage左侧大幅广告
+	(function(){
+		$(".mainpage-left").hover(function() {
+			$(this).children('.img2').animate({width:"show"}, 300);
+		}, function() {
+			$(this).children('.img2').animate({width:"hide"}, 300);
+		});
+
+		$(".mainpage-left .clicktoclose").click(function() {
+			$(this).parent(".img2").animate({width:"hide"}, 300);
+			return false;
+		});
+
+		$(".topad .clicktoclose").click(function() {
+			$(".topad").fadeOut();
+			return false;
+		});
+	})();
+
+
 });

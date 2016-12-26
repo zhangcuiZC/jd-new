@@ -1,4 +1,19 @@
 /*header style start*/
+/*mainpage-left in common.css*/
+.topad{
+	position: relative;
+	background-color: #201497;
+	z-index: 999;
+}
+.topad a{
+	display: block;
+	width: 1190px;
+	margin: 0 auto;
+	position: relative;
+}
+.topad a img{
+	float: left;
+}
 .header{
 	height: 170px;
 	position: relative;
@@ -16,6 +31,64 @@
 	background-color: #e3e4e5;
 	font-size: 12px;
 	border-bottom: 1px solid #ddd;
+}
+.header-shortcut .dropdown > div{
+	position: absolute;
+	top: 29px;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	z-index: 99;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);	
+	display: none;
+	line-height: 25px;
+}
+.header-shortcut .dropdown .dropdownhovered{
+	position: relative;
+	z-index: 100;
+	border-color: #ccc;
+	background-color: #fff;
+}
+.header-shortcut-city{
+	line-height: 30px;
+	float: left;
+	margin-left: 200px;
+	position: relative;
+}
+.header-shortcut-city .city-selected{
+	font-size: 12px;
+	display: inline-block;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 10px 0 25px;
+	vertical-align: bottom;
+	border: 1px solid #e3e4e5;
+	border-bottom: none;
+	background: url(../img/header-shortcut-location.bmp) no-repeat 5px 6px;
+}
+.header-shortcut-city .citylist{
+	left: 0;
+	padding: 10px;
+	width: 300px;
+	height: 190px;
+	display: block;
+}
+.header-shortcut-city .citylist table{
+	width: 300px;
+	line-height: 25px;
+}
+.header-shortcut-city .citylist table td{
+	width: 60px;
+	text-align: left;
+}
+.header-shortcut-city .citylist table a{
+	padding: 4px 8px;
+}
+.header-shortcut-city .citylist table a:hover{
+	background-color: #eee;
+}
+.header-shortcut-city .citylist table a.active{
+	background-color: #f10215;
+	color: #fff;
 }
 .header-shortcut-loginlist{
 	line-height: 30px;
@@ -43,26 +116,11 @@
 	padding-right: 18px;
 	background: url(../img/header-shortcut-arrow.bmp) no-repeat right center;
 }
-.header-shortcut-loginlist .dropdown .dropdownhovered{
-	position: relative;
-	z-index: 100;
-	border-color: #ccc;
-	background-color: #fff;
-}
-.header-shortcut-loginlist .dropdown > div{
-	position: absolute;
-	top: 29px;
-	background-color: #fff;
-	border: 1px solid #ccc;
-	z-index: 99;
-	box-shadow: 2px 2px 2px rgba(0,0,0,0.1);	
-	display: none;
-	line-height: 25px;
-}
 .header-shortcut-loginlist .dropdown-sitenav{
 	right: 0;
 	padding: 5px 0;
 	width: 1189px;
+	height: 170px;
 }
 .header-shortcut-loginlist .dropdown-sitenav table{
 	float: left;

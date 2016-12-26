@@ -232,3 +232,36 @@ body{
 	width: 100px;
 	margin: 100px auto;
 }
+/*位于右上角的关闭按钮*/
+span.clicktoclose{
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 18px;
+	text-align: center;
+	background-color: rgba(255,255,255,0.2);
+	color: #fff;
+	position: absolute;
+	right: 20px;
+	top: 10px;
+}
+span.clicktoclose:hover{
+	background-color: rgba(255,255,255,0.4);
+}
+/*mainpage左侧临时广告，由于声明不多，所有没有另外新建一个临时css，暂时放在这里*/
+.mainpage-left{
+	width: 200px;
+	height: 480px;
+	position: absolute;
+	left: -200px;
+}
+.mainpage-left .img1{
+	float: right;
+}
+.mainpage-left .img2{
+	position: absolute;
+	top: 0;
+	left: 200px;
+	z-index: 999;
+	display: none;
+}
