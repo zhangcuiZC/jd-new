@@ -375,13 +375,11 @@ $(function(){
 		//左侧城市选择
 		$(".header-shortcut-city").hover(function() {
 			var that=$(this);
-			that.children('span').addClass('dropdownhovered').siblings('div').show().click(function(event) {
+			that.children('span').addClass('dropdownhovered').siblings('div').show().on('click', 'a', function(event) {
 				var target=$(event.target);
-				if (event.target.tagName==="A" || event.target.tagName==="a") {
-					that.find('a').removeClass('active');
-					target.addClass('active');
-					that.children('span').text(target.text());
-				}
+				that.find('a').removeClass('active');
+				target.addClass('active');
+				that.children('span').text(target.text());
 			});
 		}, function() {
 			$(this).children('span').removeClass('dropdownhovered').siblings('div').hide();
