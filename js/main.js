@@ -93,7 +93,15 @@ $(function(){
 	//与scroll事件相关
 	//包括顶部固定搜索栏，左侧固定导航栏，以及内容的lazyload等
 	(function(){
-		var loadadsitem1=true,loadadsitem2=true,loadadsitem3=true,changebgtimer=null,nolock=true,nolockleft=true,loadtimer1=null,loadtimer2=null;
+		var loadadsitem1=true,
+			loadadsitem2=true,
+			loadadsitem3=true,
+			changebgtimer=null,
+			nolock=true,
+			nolockleft=true,
+			loadtimer1=null,
+			loadtimer2=null,
+			resizetimer=null;
 		$(window).scroll(function() {
 			//当秒杀一栏到达浏览器顶部时，顶部固定搜索栏出现
 			if($(".seckill").offset().top-$(window).scrollTop()<=0){
@@ -111,7 +119,10 @@ $(function(){
 			if($(".showsidebarleft").offset().top-$(window).scrollTop()<=0.5*$(window).height()){
 				//只出现一次
 				if (nolockleft) {
-					$(".sidebar-leftfixed").stop(true,true).fadeIn().css('left', 0.5*$(window).width()-660);
+					$(".sidebar-leftfixed").stop(true,true).fadeIn().css({
+						left: $(window).width()>=1320 ? 0.5*$(window).width()-660 : 0,
+						top: $(window).height()>=500 ? 0.15*$(window).height() : 0
+					});
 					$(".sidebar-leftfixed .toenjoyquality").addClass('active').siblings('li').removeClass('active');
 				}
 				nolockleft=false;
@@ -322,11 +333,17 @@ $(function(){
 
 		});
 
-		//加载页面时触发滚动效果（比如在页面中间刷新页面也能使顶部和左侧固定栏出现）
+		//加载页面时触发滚动效果（比如在页面中间刷新页面也能使顶部/左侧固定栏/页面中的内容区块出现）
 		$(window).trigger('scroll');
-		//触发resize事件时保持左侧固定导航栏紧挨内容区
+		//触发resize事件时保持左侧固定导航栏紧挨内容区或者紧挨窗口左侧
 		$(window).resize(function() {
-			$(".sidebar-leftfixed").css('left', 0.5*$(window).width()-660);
+			clearTimeout(resizetimer);
+			resizetimer=setTimeout(function(){
+				$(".sidebar-leftfixed").css({
+					left: $(window).width()>=1320 ? 0.5*$(window).width()-660 : 0,
+					top: $(window).height()>=500 ? 0.15*$(window).height() : 0
+				});
+			},300);
 		});
 	})();
 
