@@ -1,3 +1,4 @@
+// 商标轮播插件
 ;(function(){
 	$.fn.extend({
 		"smimgslide":function(){
@@ -44,6 +45,8 @@
 					}
 				}
 			});
+
+			return this;
 		}
 	});
 })(jQuery);

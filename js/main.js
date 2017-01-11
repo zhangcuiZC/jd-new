@@ -15,8 +15,8 @@ $(function(){
 	}
 
 	//首页的轮播图
-	//需要slideshow-fadein.js，参数一表示轮播间隔，参数二表示主题颜色
-	slideshow(5000,"#f10215");
+	//需要jquery.slideshow.js，可更改轮播间隔和主题颜色
+	$(".mainpage-slideshow-top").slideShow({color:"#f10823"});
 
 	//给“秒杀”一栏的图片添加类，使鼠标悬浮时图片产生向上的动画效果
 	$(".seckill-content li:lt(5)").addClass('moveup');

@@ -1,3 +1,9 @@
-# jd-new
-重做京东首页
-https://zhangcuizc.github.io/jd-new/
+##京东首页——个人项目
+###[点击访问](https://zhangcuizc.github.io/jd-new/)
+
+1. 完全手动编写，实现京东首页内容/样式/行为的基础功能
+2. 使用AJAX获取一些非常用数据
+3. 使用懒加载获取非当前视口的数据
+4. 兼容至IE9
+5. 持续优化中
+
