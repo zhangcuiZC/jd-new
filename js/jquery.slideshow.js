@@ -50,9 +50,9 @@
 				left: '0',
 				bottom:'0',
 				width:imgwidth+10+"px",
-				height:'13%'
+				height:0.13*imgheight+'px'
 			});
-			var liheight=$infobox.height();
+			var liheight=0.13*imgheight;
 
 			var lists="";
 			for(i=0;i<imgnum;i++){
