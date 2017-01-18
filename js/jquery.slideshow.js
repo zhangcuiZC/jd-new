@@ -1,7 +1,7 @@
 // 定义了DOM对象的slideShow()方法，
 // 调用条件：外层容器内部嵌套一个容器，内层容器内放入a标签包裹的img元素，
-// 调用方法：$("外层容器").slideShow(实参)，可传入0~1个实参，
-// 实参说明：一个设定颜色和轮播间隔的对象。形如{color:"#ff7",time:5000}，对象可接受0~2个属性。
+// 调用方法：$("外层容器").slideShow(形参)，可传入0~1个形参，
+// 形参说明：一个设定颜色和轮播间隔的对象。形如{color:"#ff7",time:5000}，对象可接受0~2个属性。
 ;(function($){
 	$.fn.extend({
 		"slideShow":function(args){
@@ -26,7 +26,10 @@
 			}
 
 			//设置各个div的css样式
-			$imgs.css('float', 'left');
+			$imgs.css({
+				float: 'left',
+				border: 'none'
+			});
 			$outerbox.css({
 				overflow: 'hidden',
 				position: 'relative'
@@ -47,7 +50,7 @@
 				left: '0',
 				bottom:'0',
 				width:imgwidth+10+"px",
-				height:'13%',
+				height:'13%'
 			});
 			var liheight=$infobox.height();
 
@@ -76,7 +79,7 @@
 			$infobox.find('a').css({
 				display: 'inline-block',
 				width:$infobox.find('li').width()+"px",
-				textAlign:'center',
+				textAlign:'center'
 			});
 			$infobox.find('span').css({
 				display:'inline-block',
@@ -192,8 +195,31 @@
 					}
 				}
 			});
+			
+			//页面可见性，不可见时停止轮播
+			function handlevisibilitychange(){
+				if (document[hidden]) {
+					clearInterval(adTimer);
+				}else{
+					adTimer=setInterval(function () {
+						$outerbox.find('.rightarrow').trigger('click');
+					},settings.time);
+				}
+			}
+			var hidden, visibilityChange;
+			if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support 
+			  	hidden = "hidden";
+			  	visibilityChange = "visibilitychange";
+			} else if (typeof document.msHidden !== "undefined") {
+			  	hidden = "msHidden";
+			  	visibilityChange = "msvisibilitychange";
+			} else if (typeof document.webkitHidden !== "undefined") {
+			  	hidden = "webkitHidden";
+			  	visibilityChange = "webkitvisibilitychange";
+			}
 
-
+			document.addEventListener(visibilityChange, handlevisibilitychange, false);
+			
 			return this;
 		}
 	});
