@@ -1,5 +1,5 @@
-##京东首页——个人项目
-###[点击访问](https://zhangcuizc.github.io/jd-new/)
+## 京东首页——个人项目
+### [点击访问](https://zhangcuizc.github.io/jd-new/)
 
 1. 完全手动编写，实现京东首页的内容/样式/行为，与原版保持一致
 2. 使用AJAX获取一些非常用数据
